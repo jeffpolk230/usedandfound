@@ -1,0 +1,24 @@
+<% if goods.empty? %>
+<div>
+	Sorry, our market doesn't have what you're looking for
+</div>
+<% else %>
+<table>
+	<thead>
+		<tr>
+			<th>Title</th>
+			<th>Owner</th>
+			<th>Price</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% goods.each do |g| %>
+			<tr>
+				<td> <%= link_to g.title, good_path( g.id ) %></td>
+				<td> <%= link_to g.user.user_name, market_search_path( :keyword => g.user.user_name ) %></td>
+				<td> <%= g.price %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
+<% end %>

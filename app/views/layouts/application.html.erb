@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UF</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	
+	<% if user_signed_in? %>
+		<h2>Hello <%= current_user.user_name %></h2> 
+		<%= link_to 'Edit my password' , edit_user_registration_path %>
+		<%= link_to 'Sign out' , destroy_user_session_path, :method => :delete %>
+	<% else %>
+		<h2>Hello Guest :)</h2>
+		<%= link_to 'Feel like to signup ?' , new_user_registration_path %>
+		<%= link_to 'Log in with my account' , new_user_session_path %>	 
+	<% end %>
+	
+	<% if flash[:error] %>
+		<span class="error-msg"><%= flash[:error] %></span>
+	<% end %>
+
+<%= yield %>
+
+</body>
+</html>

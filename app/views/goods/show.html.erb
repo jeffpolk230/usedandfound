@@ -1,0 +1,33 @@
+<h1><%= @good.title %></h1>
+
+<% if @good.close? %>
+	<span class="warning-msg">This good is closed</span>
+<% end %>
+
+<% if @good.warned? %>
+	<span class="warning-msg">This good is warned</span>
+<% end %>
+
+<% if flash[:messge] %>
+	<span class="message"><%= flash[:messge] %></span>
+<% end %>
+
+<div>
+	<label>Owner</label>
+	<span class="value"><%= @good.user.email unless @good.user.nil? %></span>
+</div>
+
+<div>
+	<label>Price</label>
+	<span class="value"><%= @good.price %></span>
+</div>
+
+<div>
+	<label>Description</label>
+	<span class="value"><%= @good.description %></span>
+</div>
+
+<%= link_to 'Edit' ,  edit_good_path( @good.id ) if @good.owned_by? current_user %> 
+<%= link_to 'Warn' ,  warn_good_path( @good.id ) if user_signed_in? and !@good.owned_by?( current_user ) %>  
+<%= link_to 'Close' , close_good_path( @good.id ) if @good.owned_by? current_user %> 
+<%= link_to 'Back to Market' , market_path %>
