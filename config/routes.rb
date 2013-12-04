@@ -2,14 +2,25 @@ UF::Application.routes.draw do
   
   devise_for :users
   #get "welcome/index"
-  get "market" => "market#index", :as => 'market'
-  get "market/search" => "market#search" , :as => 'market_search'
-  resources :goods, :except => [ :destroy , :index ]
+  # get "market" => "market#index", :as => 'market'
+#   get "market/search" => "market#search" , :as => 'market_search'
+  resources :goods, :except => [ :destroy , :index ] do
+    resources :comments, :except => [ :index , :show ]
+  end
   
   scope :path => '/goods' , :controller => 'goods' do
     get '/close/:id' => :close , :as => 'close_good'
     get '/warn/:id'  => :warn  , :as => 'warn_good'
   end
+  
+  #resources :categories, :except => [ :destroy , :index ]
+  
+  scope :path => '/market', :controller => 'market' do
+    get '/' => :index,                :as => 'market'
+    get '/search' => :search,         :as => 'market_search'
+    get '/category/:id' => :category, :as => 'market_category'
+  end
+
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

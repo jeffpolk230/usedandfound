@@ -14,3 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+function showCommentForm(){
+	$('#comment-form-new').show();
+	$('#show-comment-form-link').hide();
+}

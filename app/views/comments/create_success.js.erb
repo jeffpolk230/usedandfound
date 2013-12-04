@@ -1,0 +1,5 @@
+$( '#comments' ).append( "<%= j render( :partial => 'show' , :locals => { :comment => @comment })%>" );
+
+$( '#comment-form-new form')[0].reset();
+$( '#comment-form-new' ).hide();
+$( '#show-comment-form-link' ).show();

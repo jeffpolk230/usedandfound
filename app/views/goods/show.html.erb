@@ -27,6 +27,22 @@
 	<span class="value"><%= @good.description %></span>
 </div>
 
+<div>
+	<label>Category</label>
+	<span class="value"><%= @good.category.category_title %></span>
+</div>
+
+<div id="comments">
+	<% @good.comments.each do |comment| %>
+		<%= render :partial => 'comments/show' , :locals => { :comment => comment } %>
+	<% end %>
+</div>
+
+<% if user_signed_in? %>
+	<%= link_to_function 'Add comment' , 'showCommentForm()' , :id => 'show-comment-form-link' %>
+	<%= render :partial => 'comments/form' , :locals => { :good => @good , :comment => Comment.new , :hidden => true , :id => 'new'} %>
+<% end %>
+
 <%= link_to 'Edit' ,  edit_good_path( @good.id ) if @good.owned_by? current_user %> 
 <%= link_to 'Warn' ,  warn_good_path( @good.id ) if user_signed_in? and !@good.owned_by?( current_user ) %>  
 <%= link_to 'Close' , close_good_path( @good.id ) if @good.owned_by? current_user %> 

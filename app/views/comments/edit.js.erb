@@ -1,0 +1,1 @@
+$( '#comment-show-<%= @comment.id %>' ).replaceWith( "<%= j render( :partial => 'form' , :locals => { :comment => @comment, :good => @good, :hidden => false, :id => @comment.id })%>" );

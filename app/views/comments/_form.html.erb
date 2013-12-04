@@ -1,0 +1,9 @@
+<div class="comment-form" style="<%= 'display:none;' if hidden %>" id="comment-form-<%= id %>">
+	<%= form_for( [ good , comment ] , :remote => true ) do |f| %>
+		<%= f.text_area :content %>
+		<div class="field-error">
+			<%= comment.errors[:content].first %>
+		</div>
+		<%= f.submit %>
+	<% end %>
+</div>

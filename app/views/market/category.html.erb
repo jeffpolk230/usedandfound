@@ -1,9 +1,10 @@
-<h1>Market</h1>
+<h1>Category - <%= @category.category_title %></h1>
 
 <%= render :partial => 'goods' , :locals => { :goods => @goods } %>
 <%= render :partial => 'categories' , :locals => { :categories => @categories } %>
 
 <%= link_to "Post new good", new_good_path %>
+<%= link_to "Back to Market", market_path %>
 
 
 <%= form_tag market_search_path , :method => :get do %>
