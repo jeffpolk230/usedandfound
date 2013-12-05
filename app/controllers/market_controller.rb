@@ -27,6 +27,6 @@ class MarketController < ApplicationController
   end
   
   def per_page
-    2
+    6
   end
 end

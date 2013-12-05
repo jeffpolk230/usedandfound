@@ -12,11 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require jquery.turbolinks
 //= require_tree .
 
 //Enable Masonry
-alert('Hello wold');
 $(document).ready( function(){
 	var container = $( '.masonry' );
 	container.masonry({
