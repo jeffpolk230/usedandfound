@@ -10,7 +10,7 @@ class MarketController < ApplicationController
     @keyword = params[:keyword]
     @results = Good.all_open
                   .includes( :user )
-                  .where('title ilike :q or description ilike :q or users.email ilike :q' , :q => "%#{@keyword}%")
+                  .where('title @@ :q or description @@ :q or users.email ilike :q' , :q => @keyword)
                   .paginate( :page => page , :per_page => per_page )
     #render 'index'
   end

@@ -34,15 +34,12 @@
 			<% end %>
 		</section>
 
-		
-		
-
 		<% if flash[:error] %>
 			<span class="error-msg"><%= flash[:error] %></span>
 		<% end %>
-
 		<%= yield %>
+	<%= render :partial => 'layouts/footer' %>
 	</div>
-
 </body>
+
 </html>

@@ -35,7 +35,7 @@
 	<p><%= @good.description %></p>
 	<div class="panel">
 		<%= link_to 'Edit' ,  edit_good_path( @good.id ) if @good.owned_by? current_user %> 
-		<%= link_to 'Warn' ,  warn_good_path( @good.id ) if user_signed_in? and !@good.owned_by?( current_user ) %>  
+		<%= link_to 'Report Inappropriate' ,  warn_good_path( @good.id ) if user_signed_in? and !@good.owned_by?( current_user ) %>  
 		<%= link_to 'Close' , close_good_path( @good.id ) if @good.owned_by? current_user %> 
 	</div>
 </div>
