@@ -1,6 +1,8 @@
+
 class MarketController < ApplicationController
+
   def index
-    @goods = Good.all_open
+    @goods = Good.all_open.paginate( :page => page , :per_page => per_page )
     @categories = Category.all
   end
   
@@ -8,15 +10,23 @@ class MarketController < ApplicationController
     @keyword = params[:keyword]
     @results = Good.all_open
                   .includes( :user )
-                  .where 'title ilike :q or description ilike :q or users.email ilike :q' , :q => "%#{@keyword}%"
-    
+                  .where('title ilike :q or description ilike :q or users.email ilike :q' , :q => "%#{@keyword}%")
+                  .paginate( :page => page , :per_page => per_page )
     #render 'index'
   end
   
   def category
     @categories = Category.all
     @category = Category.find params[:id]
-    @goods = @category.goods
+    @goods = @category.goods.all_open.paginate( :page => page , :per_page => per_page )
   end
-   
+
+  private
+  def page
+    params[:page] ? params[:page] : 1
+  end
+  
+  def per_page
+    2
+  end
 end

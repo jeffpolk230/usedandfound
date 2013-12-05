@@ -1,14 +1,20 @@
+<%= form_tag market_search_path , :method => :get , :id => 'search-bar' do %>
+	<%= label_tag "Keyword:" %>
+	<%= text_field_tag :keyword %>
+	<%= submit_tag 'Search'%>
+<% end %>
+
+<div class="market-actions-bar">
+	<%= link_to "Post new product", new_good_path, :class => 'new-good-link' %>
+</div>
+
 <h1>Category - <%= @category.category_title %></h1>
 
 <%= render :partial => 'goods' , :locals => { :goods => @goods } %>
 <%= render :partial => 'categories' , :locals => { :categories => @categories } %>
 
-<%= link_to "Post new good", new_good_path %>
 <%= link_to "Back to Market", market_path %>
 
-
-<%= form_tag market_search_path , :method => :get do %>
-	<%= label_tag "Keyword:" %>
-	<%= text_field_tag :keyword %>
-	<%= submit_tag 'Search'%>
-<% end %>
+<div class="page-foot">
+	<%= will_paginate @goods %>
+</div>

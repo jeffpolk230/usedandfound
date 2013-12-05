@@ -15,7 +15,19 @@
 //= require turbolinks
 //= require_tree .
 
+//Enable Masonry
+alert('Hello wold');
+$(document).ready( function(){
+	var container = $( '.masonry' );
+	container.masonry({
+		itemSelector: '.item'
+	});
+});
+
+
 function showCommentForm(){
 	$('#comment-form-new').show();
 	$('#show-comment-form-link').hide();
 }
+
+

@@ -5,7 +5,8 @@ class Good < ActiveRecord::Base
   belongs_to :user
   belongs_to :category
   before_create :assign_default_status
-  
+  has_attached_file :image, :styles => { :medium => "500x500>", :thumb => "250x250>"},  :default_url => "/images/missing.jpeg"
+
   has_many :comments
   
   %w(open close warned).each do |method|
@@ -22,6 +23,5 @@ class Good < ActiveRecord::Base
   def assign_default_status
     self.status ||= 'open'
   end
-  
   
 end

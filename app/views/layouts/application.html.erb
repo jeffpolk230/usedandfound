@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>UF</title>
+  <title>Used & Found</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-	
-	<% if user_signed_in? %>
-		<h2>Hello <%= current_user.user_name %></h2> 
-		<%= link_to 'Edit my password' , edit_user_registration_path %>
-		<%= link_to 'Sign out' , destroy_user_session_path, :method => :delete %>
-	<% else %>
-		<h2>Hello Guest :)</h2>
-		<%= link_to 'Feel like to signup ?' , new_user_registration_path %>
-		<%= link_to 'Log in with my account' , new_user_session_path %>	 
-	<% end %>
-	
-	<% if flash[:error] %>
-		<span class="error-msg"><%= flash[:error] %></span>
-	<% end %>
+	<div id="wrapper">
+		<section id="header">
+			<div id="logo">
+				<%= link_to market_path do %>
+					<span id="used">Used</span>
+					<span id="and"> & </span>
+					<span id="found"> Found</span>
+				<% end %>
+			</div>
+			
+			<% if user_signed_in? %>
+				<div id="user-info">
+					<%= image_tag current_user.avatar.url(:thumb) , :id => 'user-avatar' %>
+					<h2>Hello <%= current_user.user_name %></h2> 
+				
+					<%= link_to 'Edit my password' , edit_user_registration_path %>
+					<%= link_to 'Sign out' , destroy_user_session_path, :method => :delete %>
+				</div>
+			<% else %>
+				<div id="guest-bar">
+					<h2>Hello Guest</h2>
+					<%= link_to 'Feel like to signup ?' , new_user_registration_path %>
+					<%= link_to 'Log in' , new_user_session_path %>	 
+				</div>
+			<% end %>
+		</section>
 
-<%= yield %>
+		
+		
+
+		<% if flash[:error] %>
+			<span class="error-msg"><%= flash[:error] %></span>
+		<% end %>
+
+		<%= yield %>
+	</div>
 
 </body>
 </html>

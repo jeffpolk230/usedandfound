@@ -12,26 +12,38 @@
 	<span class="message"><%= flash[:messge] %></span>
 <% end %>
 
-<div>
-	<label>Owner</label>
-	<span class="value"><%= @good.user.email unless @good.user.nil? %></span>
+<%= image_tag @good.image.url, :class => 'good-image' %>
+<div id="good-detail">
+
+	<div>
+		<label>Price</label>
+		<span class="value"><%= @good.price %></span>
+	</div>
+
+	<div>
+		<label>Owner</label>
+		<span class="value"><%= @good.user.email unless @good.user.nil? %></span>
+	</div>
+
+	
+
+	<div>
+		<label>Category</label>
+		<span class="value"><%= @good.category.category_title %></span>
+	</div>
+
+	<p><%= @good.description %></p>
+	<div class="panel">
+		<%= link_to 'Edit' ,  edit_good_path( @good.id ) if @good.owned_by? current_user %> 
+		<%= link_to 'Warn' ,  warn_good_path( @good.id ) if user_signed_in? and !@good.owned_by?( current_user ) %>  
+		<%= link_to 'Close' , close_good_path( @good.id ) if @good.owned_by? current_user %> 
+	</div>
 </div>
 
-<div>
-	<label>Price</label>
-	<span class="value"><%= @good.price %></span>
-</div>
+<hr />
+<%= link_to 'Back to Market' , market_path %>
 
-<div>
-	<label>Description</label>
-	<span class="value"><%= @good.description %></span>
-</div>
-
-<div>
-	<label>Category</label>
-	<span class="value"><%= @good.category.category_title %></span>
-</div>
-
+<h2>Comments</h2>
 <div id="comments">
 	<% @good.comments.each do |comment| %>
 		<%= render :partial => 'comments/show' , :locals => { :comment => comment } %>
@@ -43,7 +55,3 @@
 	<%= render :partial => 'comments/form' , :locals => { :good => @good , :comment => Comment.new , :hidden => true , :id => 'new'} %>
 <% end %>
 
-<%= link_to 'Edit' ,  edit_good_path( @good.id ) if @good.owned_by? current_user %> 
-<%= link_to 'Warn' ,  warn_good_path( @good.id ) if user_signed_in? and !@good.owned_by?( current_user ) %>  
-<%= link_to 'Close' , close_good_path( @good.id ) if @good.owned_by? current_user %> 
-<%= link_to 'Back to Market' , market_path %>

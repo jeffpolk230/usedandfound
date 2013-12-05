@@ -16,9 +16,9 @@ UF::Application.routes.draw do
   #resources :categories, :except => [ :destroy , :index ]
   
   scope :path => '/market', :controller => 'market' do
-    get '/' => :index,                :as => 'market'
-    get '/search' => :search,         :as => 'market_search'
-    get '/category/:id' => :category, :as => 'market_category'
+    get '/(page/:page)' => :index, :constraint => { :page => /\d+/ } ,                :as => 'market'
+    get '/search(/page/:page)' => :search, :constraint => { :page => /\d+/ } ,        :as => 'market_search'
+    get '/category/:id(/page/:page)' => :category, :constraint => { :page => /\d+/ } , :as => 'market_category'
   end
 
   

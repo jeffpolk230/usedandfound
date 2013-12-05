@@ -1,0 +1,4 @@
+class AddUserAvatar < ActiveRecord::Migration
+  def change
+  end
+end

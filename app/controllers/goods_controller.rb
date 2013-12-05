@@ -54,7 +54,7 @@ class GoodsController < ApplicationController
   
   private
   def good_params( params )
-    params.required( :good ).permit( :title , :price , :description )
+    params.required( :good ).permit( :title , :price , :category_id  ,:description, :image)
   end
   
   def require_logged_in

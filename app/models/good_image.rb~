@@ -1,0 +1,2 @@
+class GoodImage < ActiveRecord::Base
+end

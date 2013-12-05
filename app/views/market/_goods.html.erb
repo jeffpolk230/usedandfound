@@ -1,26 +1,29 @@
 <% if goods.empty? %>
 <div>
 	Sorry, our market doesn't have what you're looking for
-</div>
+</div>-
 <% else %>
-<table>
-	<thead>
-		<tr>
-			<th>Title</th>
-			<th>Owner</th>
-			<th>Price</th>
-			<th>Category</th>
-		</tr>
-	</thead>
-	<tbody>
-		<% goods.each do |g| %>
-			<tr>
-				<td> <%= link_to g.title, good_path( g.id ) %></td>
-				<td> <%= link_to g.user.user_name, market_search_path( :keyword => g.user.user_name ) %></td>
-				<td> <%= g.price %></td>
-				<td> <%= link_to g.category.category_title, market_category_path( :id => g.category.id ) %></td>
-			</tr>
-		<% end %>
-	</tbody>
-</table>
+
+<div class="masonry">
+	<% goods.each do |good| %>
+		<%= link_to good_path( good.id ) do %>
+			<div class="item">
+				<%= image_tag good.image.url(:thumb), :class => 'item-image' %>
+				<div class="item-detail">
+					<span class="item-title"><%= good.title %></span>
+					<span class="item-price"><%= good.price %></span>
+					<span class="item-category"><%= good.category.category_title %></span>
+
+					<div class="item-owner">
+						<span class="item-owner-name"><%= good.user.user_name %></span>
+
+						<%= image_tag good.user.avatar.url(:thumb) , class: 'item-owner-avatar' %>
+					</div> <!-- item-owner -->
+				</div> <!-- item-detail -->
+			</div> <!-- item -->
+		<% end %> <!-- link-to -->
+	<% end %> <!-- each -->
+</div> <!-- .masonry -->
+
 <% end %>
+

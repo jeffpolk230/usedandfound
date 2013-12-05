@@ -1,8 +1,14 @@
 <div class="comment" id="comment-show-<%= comment.id %>">
-	<div class="comment-content"><%= comment.content %></div>
-	<div class="comment-user"><%= comment.user.user_name %></div>
-	<div class="comment-time"><%= distance_of_time_in_words_to_now comment.created_at %></div>
-	<% if user_signed_in? and comment.owned_by?( current_user ) %>
-		<%= link_to "Edit", edit_good_comment_path( comment.good_id , comment.id ), remote: true %>
-	<% end %>
+	<%= image_tag comment.user.avatar.url(:thumb) %>
+	<div class="comment-text">
+		<span class="comment-user"><%= comment.user.user_name %></span>
+		<span class="comment-time"><%= distance_of_time_in_words_to_now comment.created_at %></span>
+		<span class="comment-content"><%= comment.content %></span>
+
+		<% if user_signed_in? and comment.owned_by?( current_user ) %>
+			<%= link_to "Edit", edit_good_comment_path( comment.good_id , comment.id ), remote: true %>
+		<% end %>
+	</div>
+	
+	
 </div>

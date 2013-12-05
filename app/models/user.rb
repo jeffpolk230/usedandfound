@@ -5,7 +5,8 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable, :authentication_keys => [ :login ]
          
   attr_accessor :login
-  
+  has_attached_file :avatar, :styles => { :medium => "250x250>", :thumb => "150x150>" }, :default_url => "/images/user_missing.jpg"
+
   has_many :goods
   validates :user_name, :presence => true, :uniqueness => true
   

@@ -1,0 +1,4 @@
+class AddImageToGood < ActiveRecord::Migration
+  def change
+  end
+end

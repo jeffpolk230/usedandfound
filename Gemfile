@@ -36,6 +36,9 @@ end
 gem 'bcrypt-ruby', require: 'bcrypt'
 
 gem 'devise'
+gem 'paperclip', '~>3.0'
+gem 'will_paginate', '~> 3.0'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 

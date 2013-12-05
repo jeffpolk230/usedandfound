@@ -11,3 +11,272 @@
  *= require_self
  *= require_tree .
  */
+
+body {
+	background: #eee;
+	color: #333;
+	font-family: 'Helvetica';
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+a {
+	color: #333;
+}
+
+#wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+section#header {
+	padding: 0.5em 1.0em;
+	border-bottom: solid 1px #999;
+
+}
+
+section#header #logo {
+	font-size: 3.0em;
+	width: 49%;
+	display: inline-block;
+
+	vertical-align: middle;
+}
+
+section#header #logo a {
+	text-decoration: none;
+}
+
+
+section#header #logo #found {
+	font-weight: bold;
+}
+
+#user-info , #guest-bar {
+	text-align: right;
+	width: 49%; 
+	display: inline-block;
+
+	vertical-align: middle;
+}
+
+#user-info #user-avatar {
+	width: 5.0em;
+	height: 5.0em;
+	border-radius: 50%;
+
+	vertical-align: bottom;
+	margin-right: 1em;
+}
+
+#user-info h2 , #guest-bar h2{
+	display: inline-block;
+	font-weight: normal;
+	font-size: 1.2em;
+}
+
+#user-info a , #guest-bar a{
+	color: #333;
+	font-weight: bold;
+}
+
+#search-bar {
+	padding: 0.5em;
+	text-align: right;
+}
+
+#search-bar input[type=text] {
+	background: #eee;
+	border: none;
+	border-bottom: solid 1px #333;
+	width: 20%;
+}
+
+ul#category-bar {
+	padding: 0;
+}
+
+ul#category-bar li {
+	list-style: none;
+	display: inline-block;
+}
+
+ul#category-bar li a {
+	font-size: 1.5em;
+	color: #333;
+	padding: 0em 0.5em;
+}
+
+ul#category-bar li + li:before {
+	content: '\\';
+	font-size: 1.5em;
+}
+
+.masonry .item { 
+	width: 25%;
+	box-sizing: border-box;
+	margin: 2%;
+	box-shadow: 3px 3px 4px 0px #999;
+}
+
+.item .item-image {
+	width: 100%;
+	border-radius: 4px 4px 0px 0px;
+}
+
+.item .item-detail {
+	background: #fff;
+	padding: 1em;
+
+	border-radius: 0px 0px 4px 4px;
+}
+
+.item .item-detail span {
+	color: #333;
+}
+
+.item-title {
+	font-size: 1.2em;
+	width: 100%;
+	display: inline-block;
+	font-weight: bold;
+}
+
+.item-price {
+	display: inline-block;
+}
+
+.item-price:after{
+	content: ' @';
+}
+
+.item-owner {
+	text-align: right;
+}
+
+.item-owner-avatar {
+	width: 3.0em;
+	border-radius: 50%;
+	vertical-align: middle;
+	margin-left: 0.5em;
+}
+
+.message , .warning-msg {
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	margin: 2em 0em;
+}
+
+.good-image {
+	width: 50%;
+	vertical-align: top;
+}
+
+#good-detail {
+	display: inline-block;
+	width: 44%;
+	margin-left: 5%;
+}
+
+#good-detail label{
+	width: 25%;
+	font-weight: bold;
+	display: inline-block;
+}
+
+#good-detail .panel a{
+	color: #333;
+}
+
+#good-detail .panel a + a:before {
+	content: ' \ ';
+}
+
+.comment-form textarea {
+	width: 100%;
+}
+
+.comment-form {
+	margin-bottom: 1em;
+}
+
+.comment {
+	margin-bottom: 1em;
+}
+
+.comment img {
+	width: 4em;
+	height: 4em;
+	border-radius: 50%;
+
+	vertical-align: top;
+}
+
+.comment-text {
+	margin-left: 1em;
+	display: inline-block;
+	width: 90%;
+}
+
+.comment-user {
+	font-weight: bold;
+}
+
+.comment-user:after{
+	content: ' ';
+}
+
+.comment-time {
+	color: #999;
+}
+
+.comment-content {
+	display: block;
+	margin-bottom: 1em;
+}
+
+.field {
+	margin-bottom: 0.5em;
+}
+
+.field label {
+	width: 20%;
+	display: inline-block;
+	font-weight: bold;
+
+	vertical-align: top;
+}
+
+input[type='text'] , input[type='number'] , input[type='email'] , input[type='password'] , textarea , select {
+	width: 79%;
+}
+
+input[type='text'] , input[type='number'] , input[type='email'] , input[type='password']{
+	background: #eee;
+	border: none;
+	border-bottom: solid 1px #333;
+}
+
+.actions {
+	margin-top: 2em;
+	text-align: right;
+}
+
+.market-actions-bar {
+	text-align: right;
+}
+
+.new-good-link:before {
+	content: '+ ';
+	display: inline-block;
+	font-size: 1.5em;
+	width: 1.2em;
+	background: #333;
+	color: #eee;
+	text-align: center;
+	border-radius: 3px;
+
+	margin-right: 0.5em;
+}
