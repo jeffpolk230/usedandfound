@@ -52844,3 +52844,6 @@ Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-05 21:58:40 +07
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-05 21:58:40 +0700
+  [1m[36m (94.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (104.6ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m

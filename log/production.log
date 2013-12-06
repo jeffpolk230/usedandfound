@@ -1,0 +1,1465 @@
+I, [2013-12-06T13:20:41.170304 #25623]  INFO -- : Migrating to CreateGoods (20131201133439)
+I, [2013-12-06T13:20:41.318152 #25623]  INFO -- : Migrating to DeviseCreateUsers (20131201134123)
+I, [2013-12-06T13:20:41.489261 #25623]  INFO -- : Migrating to AddUserToGoods (20131201134954)
+I, [2013-12-06T13:20:41.505592 #25623]  INFO -- : Migrating to AddUsernameUsers (20131201165518)
+I, [2013-12-06T13:20:41.516587 #25623]  INFO -- : Migrating to CreateCategories (20131204114358)
+I, [2013-12-06T13:20:41.566700 #25623]  INFO -- : Migrating to AddCategoryToGoods (20131204114804)
+I, [2013-12-06T13:20:41.666664 #25623]  INFO -- : Migrating to CreateComments (20131204135006)
+I, [2013-12-06T13:20:41.814616 #25623]  INFO -- : Migrating to AddImageToGood (20131204154906)
+I, [2013-12-06T13:20:41.833415 #25623]  INFO -- : Migrating to AddUserAvatar (20131205020750)
+I, [2013-12-06T13:24:22.840725 #25999]  INFO -- : Started GET "/" for 203.159.55.106 at 2013-12-06 13:24:22 +0700
+I, [2013-12-06T13:24:22.909226 #25999]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2013-12-06T13:24:22.943492 #25999]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (2.5ms)
+I, [2013-12-06T13:24:22.963587 #25999]  INFO -- :   Rendered layouts/_footer.html.erb (0.5ms)
+I, [2013-12-06T13:24:22.964233 #25999]  INFO -- : Completed 200 OK in 55ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+I, [2013-12-06T13:24:23.070041 #25999]  INFO -- : Started GET "/stylesheets/application.css" for 203.159.55.106 at 2013-12-06 13:24:23 +0700
+F, [2013-12-06T13:24:23.074290 #25999] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+I, [2013-12-06T13:24:23.085944 #25999]  INFO -- : Started GET "/javascripts/application.js" for 203.159.55.106 at 2013-12-06 13:24:23 +0700
+F, [2013-12-06T13:24:23.087410 #25999] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+I, [2013-12-06T13:24:27.910934 #25999]  INFO -- : Started GET "/" for 203.159.55.106 at 2013-12-06 13:24:27 +0700
+I, [2013-12-06T13:24:27.915824 #25999]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2013-12-06T13:24:27.919423 #25999]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (1.1ms)
+I, [2013-12-06T13:24:27.924451 #25999]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:24:27.925067 #25999]  INFO -- : Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+I, [2013-12-06T13:24:27.946197 #25999]  INFO -- : Started GET "/stylesheets/application.css" for 203.159.55.106 at 2013-12-06 13:24:27 +0700
+I, [2013-12-06T13:24:27.950947 #26008]  INFO -- : Started GET "/javascripts/application.js" for 203.159.55.106 at 2013-12-06 13:24:27 +0700
+F, [2013-12-06T13:24:27.952406 #25999] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+F, [2013-12-06T13:24:28.005996 #26008] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+I, [2013-12-06T13:24:30.598046 #26008]  INFO -- : Started GET "/market" for 203.159.55.106 at 2013-12-06 13:24:30 +0700
+I, [2013-12-06T13:24:30.608465 #26008]  INFO -- : Processing by MarketController#index as HTML
+I, [2013-12-06T13:24:30.608621 #26008]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}}
+I, [2013-12-06T13:24:30.670310 #26008]  INFO -- :   Rendered market/_categories.html.erb (4.0ms)
+I, [2013-12-06T13:24:30.688802 #26008]  INFO -- :   Rendered market/_goods.html.erb (17.1ms)
+I, [2013-12-06T13:24:30.690509 #26008]  INFO -- :   Rendered market/index.html.erb within layouts/application (30.9ms)
+I, [2013-12-06T13:24:30.721299 #26008]  INFO -- :   Rendered layouts/_footer.html.erb (0.7ms)
+I, [2013-12-06T13:24:30.722113 #26008]  INFO -- : Completed 200 OK in 113ms (Views: 55.4ms | ActiveRecord: 11.7ms)
+I, [2013-12-06T13:24:30.741772 #25999]  INFO -- : Started GET "/javascripts/application.js" for 203.159.55.106 at 2013-12-06 13:24:30 +0700
+F, [2013-12-06T13:24:30.743889 #25999] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+I, [2013-12-06T13:24:30.745065 #26008]  INFO -- : Started GET "/stylesheets/application.css" for 203.159.55.106 at 2013-12-06 13:24:30 +0700
+F, [2013-12-06T13:24:30.747254 #26008] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+I, [2013-12-06T13:24:43.653818 #26008]  INFO -- : Started GET "/market" for 203.159.55.106 at 2013-12-06 13:24:43 +0700
+I, [2013-12-06T13:24:43.658122 #26008]  INFO -- : Processing by MarketController#index as HTML
+I, [2013-12-06T13:24:43.658259 #26008]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}}
+I, [2013-12-06T13:24:43.664929 #26008]  INFO -- :   Rendered market/_categories.html.erb (1.7ms)
+I, [2013-12-06T13:24:43.667308 #26008]  INFO -- :   Rendered market/_goods.html.erb (2.0ms)
+I, [2013-12-06T13:24:43.668868 #26008]  INFO -- :   Rendered market/index.html.erb within layouts/application (7.5ms)
+I, [2013-12-06T13:24:43.673629 #26008]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:24:43.674164 #26008]  INFO -- : Completed 200 OK in 16ms (Views: 11.9ms | ActiveRecord: 1.4ms)
+I, [2013-12-06T13:24:43.690336 #26008]  INFO -- : Started GET "/stylesheets/application.css" for 203.159.55.106 at 2013-12-06 13:24:43 +0700
+I, [2013-12-06T13:24:43.694038 #25999]  INFO -- : Started GET "/javascripts/application.js" for 203.159.55.106 at 2013-12-06 13:24:43 +0700
+F, [2013-12-06T13:24:43.696093 #25999] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+F, [2013-12-06T13:24:43.698058 #26008] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+I, [2013-12-06T13:24:47.786988 #26008]  INFO -- : Started GET "/goods/new" for 203.159.55.106 at 2013-12-06 13:24:47 +0700
+I, [2013-12-06T13:24:47.792146 #26008]  INFO -- : Processing by GoodsController#new as HTML
+I, [2013-12-06T13:24:47.797563 #26008]  INFO -- : Redirected to http://web8.cs.ait.ac.th/users/sign_in
+I, [2013-12-06T13:24:47.797845 #26008]  INFO -- : Filter chain halted as :require_logged_in rendered or redirected
+I, [2013-12-06T13:24:47.798175 #26008]  INFO -- : Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+I, [2013-12-06T13:24:47.811566 #26008]  INFO -- : Started GET "/users/sign_in" for 203.159.55.106 at 2013-12-06 13:24:47 +0700
+I, [2013-12-06T13:24:47.815894 #26008]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2013-12-06T13:24:48.019916 #26008]  INFO -- :   Rendered devise/shared/_links.erb (3.6ms)
+I, [2013-12-06T13:24:48.020261 #26008]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (79.1ms)
+I, [2013-12-06T13:24:48.094313 #26008]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:24:48.094954 #26008]  INFO -- : Completed 200 OK in 279ms (Views: 158.6ms | ActiveRecord: 4.4ms)
+I, [2013-12-06T13:24:48.133796 #25999]  INFO -- : Started GET "/javascripts/application.js" for 203.159.55.106 at 2013-12-06 13:24:48 +0700
+F, [2013-12-06T13:24:48.135882 #25999] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+I, [2013-12-06T13:24:48.137697 #26008]  INFO -- : Started GET "/stylesheets/application.css" for 203.159.55.106 at 2013-12-06 13:24:48 +0700
+F, [2013-12-06T13:24:48.140669 #26008] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+I, [2013-12-06T13:24:50.683505 #26008]  INFO -- : Started GET "/market" for 203.159.55.106 at 2013-12-06 13:24:50 +0700
+I, [2013-12-06T13:24:50.685927 #26008]  INFO -- : Processing by MarketController#index as HTML
+I, [2013-12-06T13:24:50.686071 #26008]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}}
+I, [2013-12-06T13:24:50.692973 #26008]  INFO -- :   Rendered market/_categories.html.erb (1.6ms)
+I, [2013-12-06T13:24:50.695377 #26008]  INFO -- :   Rendered market/_goods.html.erb (2.0ms)
+I, [2013-12-06T13:24:50.697430 #26008]  INFO -- :   Rendered market/index.html.erb within layouts/application (8.1ms)
+I, [2013-12-06T13:24:50.702144 #26008]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:24:50.702701 #26008]  INFO -- : Completed 200 OK in 16ms (Views: 12.6ms | ActiveRecord: 1.4ms)
+I, [2013-12-06T13:24:50.719214 #25999]  INFO -- : Started GET "/javascripts/application.js" for 203.159.55.106 at 2013-12-06 13:24:50 +0700
+F, [2013-12-06T13:24:50.721282 #25999] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+I, [2013-12-06T13:24:50.723186 #26008]  INFO -- : Started GET "/stylesheets/application.css" for 203.159.55.106 at 2013-12-06 13:24:50 +0700
+F, [2013-12-06T13:24:50.726261 #26008] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+I, [2013-12-06T13:25:03.766220 #26008]  INFO -- : Started GET "/" for 203.159.55.106 at 2013-12-06 13:25:03 +0700
+I, [2013-12-06T13:25:03.770081 #26008]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2013-12-06T13:25:03.777200 #26008]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (2.1ms)
+I, [2013-12-06T13:25:03.781756 #26008]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:25:03.782331 #26008]  INFO -- : Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+I, [2013-12-06T13:25:03.843143 #26008]  INFO -- : Started GET "/stylesheets/application.css" for 203.159.55.106 at 2013-12-06 13:25:03 +0700
+I, [2013-12-06T13:25:03.846016 #25999]  INFO -- : Started GET "/javascripts/application.js" for 203.159.55.106 at 2013-12-06 13:25:03 +0700
+F, [2013-12-06T13:25:03.848126 #25999] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+F, [2013-12-06T13:25:03.850936 #26008] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+I, [2013-12-06T13:28:48.360653 #26008]  INFO -- : Started GET "/users/sign_up" for 203.159.55.106 at 2013-12-06 13:28:48 +0700
+I, [2013-12-06T13:28:48.369117 #26008]  INFO -- : Processing by Devise::RegistrationsController#new as HTML
+I, [2013-12-06T13:28:48.407152 #26008]  INFO -- :   Rendered devise/shared/_links.erb (1.2ms)
+I, [2013-12-06T13:28:48.407480 #26008]  INFO -- :   Rendered devise/registrations/new.html.erb within layouts/application (28.0ms)
+I, [2013-12-06T13:28:48.412152 #26008]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:28:48.412744 #26008]  INFO -- : Completed 200 OK in 43ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+I, [2013-12-06T13:28:48.466575 #25999]  INFO -- : Started GET "/javascripts/application.js" for 203.159.55.106 at 2013-12-06 13:28:48 +0700
+F, [2013-12-06T13:28:48.469789 #25999] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+I, [2013-12-06T13:28:48.463880 #26008]  INFO -- : Started GET "/stylesheets/application.css" for 203.159.55.106 at 2013-12-06 13:28:48 +0700
+F, [2013-12-06T13:28:48.473233 #26008] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+I, [2013-12-06T13:29:10.541963 #26008]  INFO -- : Started POST "/users" for 203.159.55.106 at 2013-12-06 13:29:10 +0700
+I, [2013-12-06T13:29:10.546691 #26008]  INFO -- : Processing by Devise::RegistrationsController#create as HTML
+I, [2013-12-06T13:29:10.546976 #26008]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"qcP6kddKKmtkpkV4xOeoKqfoVCvZjUYAMSwn85S8dWs=", "user"=>{"user_name"=>"jeson", "email"=>"jeson@ait", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb9ece1a4 @tempfile=#<Tempfile:/tmp/RackMultipart20131206-26008-etkh4m>, @original_filename="thai.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"thai.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Sign up"}
+I, [2013-12-06T13:29:10.771004 #26008]  INFO -- : Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/thai20131206-26008-gx0ysz.png[0]'
+I, [2013-12-06T13:29:10.776624 #26008]  INFO -- : [paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+I, [2013-12-06T13:29:10.779265 #26008]  INFO -- : Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/thai20131206-26008-gx0ysz.png[0]'
+I, [2013-12-06T13:29:10.783251 #26008]  INFO -- : [paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+I, [2013-12-06T13:29:10.843930 #26008]  INFO -- :   Rendered devise/shared/_links.erb (0.6ms)
+I, [2013-12-06T13:29:10.844258 #26008]  INFO -- :   Rendered devise/registrations/new.html.erb within layouts/application (14.9ms)
+I, [2013-12-06T13:29:10.848421 #26008]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:29:10.849021 #26008]  INFO -- : Completed 200 OK in 302ms (Views: 20.0ms | ActiveRecord: 3.2ms)
+I, [2013-12-06T13:29:10.936889 #26008]  INFO -- : Started GET "/stylesheets/application.css" for 203.159.55.106 at 2013-12-06 13:29:10 +0700
+F, [2013-12-06T13:29:10.939267 #26008] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+I, [2013-12-06T13:29:10.963976 #26008]  INFO -- : Started GET "/javascripts/application.js" for 203.159.55.106 at 2013-12-06 13:29:10 +0700
+F, [2013-12-06T13:29:10.965720 #26008] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+I, [2013-12-06T13:35:48.770501 #26008]  INFO -- : Started POST "/users" for 203.159.55.106 at 2013-12-06 13:35:48 +0700
+I, [2013-12-06T13:35:48.782715 #26008]  INFO -- : Processing by Devise::RegistrationsController#create as HTML
+I, [2013-12-06T13:35:48.782936 #26008]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"qcP6kddKKmtkpkV4xOeoKqfoVCvZjUYAMSwn85S8dWs=", "user"=>{"user_name"=>"jeson", "email"=>"jeson@ait", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb9f4aa4c @tempfile=#<Tempfile:/tmp/RackMultipart20131206-26008-sswqv9>, @original_filename="thai.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"thai.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Sign up"}
+I, [2013-12-06T13:35:49.216576 #26008]  INFO -- : Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/thai20131206-26008-1q8v9mp.png[0]'
+I, [2013-12-06T13:35:49.228568 #26008]  INFO -- : [paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+I, [2013-12-06T13:35:49.230514 #26008]  INFO -- : Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/thai20131206-26008-1q8v9mp.png[0]'
+I, [2013-12-06T13:35:49.235904 #26008]  INFO -- : [paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+I, [2013-12-06T13:35:49.279150 #26008]  INFO -- :   Rendered devise/shared/_links.erb (0.5ms)
+I, [2013-12-06T13:35:49.279390 #26008]  INFO -- :   Rendered devise/registrations/new.html.erb within layouts/application (21.1ms)
+I, [2013-12-06T13:35:49.288242 #26008]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:35:49.288720 #26008]  INFO -- : Completed 200 OK in 506ms (Views: 30.6ms | ActiveRecord: 12.9ms)
+I, [2013-12-06T13:35:49.398049 #26008]  INFO -- : Started GET "/stylesheets/application.css" for 203.159.55.106 at 2013-12-06 13:35:49 +0700
+F, [2013-12-06T13:35:49.401021 #26008] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+I, [2013-12-06T13:35:49.408864 #26008]  INFO -- : Started GET "/javascripts/application.js" for 203.159.55.106 at 2013-12-06 13:35:49 +0700
+F, [2013-12-06T13:35:49.410079 #26008] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+I, [2013-12-06T13:35:55.728951 #26008]  INFO -- : Started GET "/market" for 203.159.55.106 at 2013-12-06 13:35:55 +0700
+I, [2013-12-06T13:35:55.730808 #26008]  INFO -- : Processing by MarketController#index as HTML
+I, [2013-12-06T13:35:55.730904 #26008]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}}
+I, [2013-12-06T13:35:55.756210 #26008]  INFO -- :   Rendered market/_categories.html.erb (13.3ms)
+I, [2013-12-06T13:35:55.764166 #26008]  INFO -- :   Rendered market/_goods.html.erb (7.6ms)
+I, [2013-12-06T13:35:55.765300 #26008]  INFO -- :   Rendered market/index.html.erb within layouts/application (24.0ms)
+I, [2013-12-06T13:35:55.780979 #26008]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:35:55.781456 #26008]  INFO -- : Completed 200 OK in 50ms (Views: 21.4ms | ActiveRecord: 19.1ms)
+I, [2013-12-06T13:35:55.820994 #26008]  INFO -- : Started GET "/stylesheets/application.css" for 203.159.55.106 at 2013-12-06 13:35:55 +0700
+F, [2013-12-06T13:35:55.822703 #26008] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+I, [2013-12-06T13:35:55.829692 #26008]  INFO -- : Started GET "/javascripts/application.js" for 203.159.55.106 at 2013-12-06 13:35:55 +0700
+F, [2013-12-06T13:35:55.830928 #26008] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+I, [2013-12-06T13:39:42.377625 #26008]  INFO -- : Started GET "/market" for 203.159.55.106 at 2013-12-06 13:39:42 +0700
+I, [2013-12-06T13:39:42.383631 #26008]  INFO -- : Processing by MarketController#index as HTML
+I, [2013-12-06T13:39:42.383740 #26008]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}}
+I, [2013-12-06T13:39:42.400269 #26008]  INFO -- :   Rendered market/_categories.html.erb (3.9ms)
+I, [2013-12-06T13:39:42.407742 #26008]  INFO -- :   Rendered market/_goods.html.erb (7.1ms)
+I, [2013-12-06T13:39:42.408878 #26008]  INFO -- :   Rendered market/index.html.erb within layouts/application (14.6ms)
+I, [2013-12-06T13:39:42.412491 #26008]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:39:42.412983 #26008]  INFO -- : Completed 200 OK in 29ms (Views: 10.4ms | ActiveRecord: 9.1ms)
+I, [2013-12-06T13:39:42.509713 #26008]  INFO -- : Started GET "/stylesheets/application.css" for 203.159.55.106 at 2013-12-06 13:39:42 +0700
+F, [2013-12-06T13:39:42.511617 #26008] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+I, [2013-12-06T13:39:42.522105 #26008]  INFO -- : Started GET "/javascripts/application.js" for 203.159.55.106 at 2013-12-06 13:39:42 +0700
+F, [2013-12-06T13:39:42.523479 #26008] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+I, [2013-12-06T13:40:55.169092 #26008]  INFO -- : Started GET "/market" for 203.159.55.106 at 2013-12-06 13:40:55 +0700
+I, [2013-12-06T13:40:55.171334 #26008]  INFO -- : Processing by MarketController#index as HTML
+I, [2013-12-06T13:40:55.171433 #26008]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}}
+I, [2013-12-06T13:40:55.183363 #26008]  INFO -- :   Rendered market/_categories.html.erb (3.6ms)
+I, [2013-12-06T13:40:55.189002 #26008]  INFO -- :   Rendered market/_goods.html.erb (5.4ms)
+I, [2013-12-06T13:40:55.190050 #26008]  INFO -- :   Rendered market/index.html.erb within layouts/application (11.9ms)
+I, [2013-12-06T13:40:55.197721 #26008]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:40:55.198143 #26008]  INFO -- : Completed 200 OK in 27ms (Views: 19.2ms | ActiveRecord: 1.3ms)
+I, [2013-12-06T13:40:55.237349 #26008]  INFO -- : Started GET "/stylesheets/application.css" for 203.159.55.106 at 2013-12-06 13:40:55 +0700
+F, [2013-12-06T13:40:55.240462 #26008] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+I, [2013-12-06T13:40:55.275686 #10876]  INFO -- : Started GET "/javascripts/application.js" for 203.159.55.106 at 2013-12-06 13:40:55 +0700
+F, [2013-12-06T13:40:55.532691 #10876] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+I, [2013-12-06T13:47:29.034747 #10876]  INFO -- : Started GET "/market" for 203.159.55.106 at 2013-12-06 13:47:29 +0700
+I, [2013-12-06T13:47:29.045275 #10876]  INFO -- : Processing by MarketController#index as HTML
+I, [2013-12-06T13:47:29.045468 #10876]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}}
+I, [2013-12-06T13:47:29.258103 #10876]  INFO -- :   Rendered market/_categories.html.erb (4.6ms)
+I, [2013-12-06T13:47:29.320325 #10876]  INFO -- :   Rendered market/_goods.html.erb (53.7ms)
+I, [2013-12-06T13:47:29.322189 #10876]  INFO -- :   Rendered market/index.html.erb within layouts/application (86.7ms)
+I, [2013-12-06T13:47:29.362286 #10876]  INFO -- :   Rendered layouts/_footer.html.erb (0.7ms)
+I, [2013-12-06T13:47:29.363045 #10876]  INFO -- : Completed 200 OK in 317ms (Views: 214.6ms | ActiveRecord: 48.5ms)
+I, [2013-12-06T13:47:29.426259 #10876]  INFO -- : Started GET "/stylesheets/application.css" for 203.159.55.106 at 2013-12-06 13:47:29 +0700
+F, [2013-12-06T13:47:29.428696 #10876] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+I, [2013-12-06T13:47:29.432783 #10876]  INFO -- : Started GET "/javascripts/application.js" for 203.159.55.106 at 2013-12-06 13:47:29 +0700
+F, [2013-12-06T13:47:29.435916 #10876] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+I, [2013-12-06T13:48:12.970143 #18395]  INFO -- : Started GET "/market" for 203.159.55.106 at 2013-12-06 13:48:12 +0700
+I, [2013-12-06T13:48:13.005673 #18395]  INFO -- : Processing by MarketController#index as HTML
+I, [2013-12-06T13:48:13.005850 #18395]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}}
+I, [2013-12-06T13:48:13.045287 #18395]  INFO -- :   Rendered market/_categories.html.erb (2.5ms)
+I, [2013-12-06T13:48:13.056698 #18395]  INFO -- :   Rendered market/_goods.html.erb (10.6ms)
+I, [2013-12-06T13:48:13.057849 #18395]  INFO -- :   Rendered market/index.html.erb within layouts/application (19.0ms)
+I, [2013-12-06T13:48:18.866436 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.6ms)
+I, [2013-12-06T13:48:18.867048 #18395]  INFO -- : Completed 200 OK in 5861ms (Views: 5823.6ms | ActiveRecord: 7.3ms)
+I, [2013-12-06T13:48:18.922835 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.55.106 at 2013-12-06 13:48:18 +0700
+I, [2013-12-06T13:48:18.945333 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.55.106 at 2013-12-06 13:48:18 +0700
+I, [2013-12-06T13:48:23.631954 #18395]  INFO -- : Started GET "/users/sign_up" for 203.159.55.106 at 2013-12-06 13:48:23 +0700
+I, [2013-12-06T13:48:23.636637 #18395]  INFO -- : Processing by Devise::RegistrationsController#new as HTML
+I, [2013-12-06T13:48:23.933795 #18395]  INFO -- :   Rendered devise/shared/_links.erb (3.2ms)
+I, [2013-12-06T13:48:23.948013 #18395]  INFO -- :   Rendered devise/registrations/new.html.erb within layouts/application (257.0ms)
+I, [2013-12-06T13:48:23.952622 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:48:23.953199 #18395]  INFO -- : Completed 200 OK in 316ms (Views: 297.4ms | ActiveRecord: 4.1ms)
+I, [2013-12-06T13:49:12.849607 #18395]  INFO -- : Started POST "/users" for 203.159.55.106 at 2013-12-06 13:49:12 +0700
+I, [2013-12-06T13:49:12.855380 #18395]  INFO -- : Processing by Devise::RegistrationsController#create as HTML
+I, [2013-12-06T13:49:12.855923 #18395]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"qcP6kddKKmtkpkV4xOeoKqfoVCvZjUYAMSwn85S8dWs=", "user"=>{"user_name"=>"Jeff", "email"=>"jeff@ait.asia", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xbadc971c @tempfile=#<Tempfile:/tmp/RackMultipart20131206-18395-azr9de>, @original_filename="thai.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"thai.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Sign up"}
+I, [2013-12-06T13:49:13.078616 #18395]  INFO -- : Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/thai20131206-18395-11f35v8.png[0]'
+I, [2013-12-06T13:49:13.094627 #18395]  INFO -- : [paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+I, [2013-12-06T13:49:13.097379 #18395]  INFO -- : Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/thai20131206-18395-11f35v8.png[0]'
+I, [2013-12-06T13:49:13.103566 #18395]  INFO -- : [paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+I, [2013-12-06T13:49:13.239409 #18395]  INFO -- :   Rendered devise/shared/_links.erb (0.6ms)
+I, [2013-12-06T13:49:13.239743 #18395]  INFO -- :   Rendered devise/registrations/new.html.erb within layouts/application (13.4ms)
+I, [2013-12-06T13:49:13.244416 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:49:13.244982 #18395]  INFO -- : Completed 200 OK in 389ms (Views: 18.9ms | ActiveRecord: 8.9ms)
+I, [2013-12-06T13:49:39.380961 #18395]  INFO -- : Started HEAD "/" for 211.237.24.170 at 2013-12-06 13:49:39 +0700
+I, [2013-12-06T13:49:39.387244 #18395]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2013-12-06T13:49:39.405240 #18395]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (2.3ms)
+I, [2013-12-06T13:49:39.410762 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:49:39.411365 #18395]  INFO -- : Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+I, [2013-12-06T13:49:43.358689 #18395]  INFO -- : Started POST "/users" for 203.159.55.106 at 2013-12-06 13:49:43 +0700
+I, [2013-12-06T13:49:43.361666 #18395]  INFO -- : Processing by Devise::RegistrationsController#create as HTML
+I, [2013-12-06T13:49:43.361833 #18395]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"qcP6kddKKmtkpkV4xOeoKqfoVCvZjUYAMSwn85S8dWs=", "user"=>{"user_name"=>"Jeff", "email"=>"jeff@ait.asia", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+I, [2013-12-06T13:49:43.602861 #18395]  INFO -- :   Rendered devise/shared/_links.erb (0.5ms)
+I, [2013-12-06T13:49:43.603226 #18395]  INFO -- :   Rendered devise/registrations/new.html.erb within layouts/application (12.3ms)
+I, [2013-12-06T13:49:43.607520 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:49:43.608092 #18395]  INFO -- : Completed 200 OK in 246ms (Views: 17.3ms | ActiveRecord: 2.2ms)
+I, [2013-12-06T13:49:50.439900 #18395]  INFO -- : Started POST "/users" for 203.159.55.106 at 2013-12-06 13:49:50 +0700
+I, [2013-12-06T13:49:50.442561 #18395]  INFO -- : Processing by Devise::RegistrationsController#create as HTML
+I, [2013-12-06T13:49:50.442724 #18395]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"qcP6kddKKmtkpkV4xOeoKqfoVCvZjUYAMSwn85S8dWs=", "user"=>{"user_name"=>"Jeff", "email"=>"jeff@ait.asia", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+I, [2013-12-06T13:49:50.788941 #18395]  INFO -- : Redirected to http://web8.cs.ait.ac.th/
+I, [2013-12-06T13:49:50.789384 #18395]  INFO -- : Completed 302 Found in 346ms (ActiveRecord: 111.3ms)
+I, [2013-12-06T13:49:50.822259 #18395]  INFO -- : Started GET "/" for 203.159.55.106 at 2013-12-06 13:49:50 +0700
+I, [2013-12-06T13:49:50.825658 #18395]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2013-12-06T13:49:50.828297 #18395]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (0.8ms)
+I, [2013-12-06T13:49:50.838518 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:49:50.839076 #18395]  INFO -- : Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 1.4ms)
+I, [2013-12-06T13:49:53.882259 #18395]  INFO -- : Started GET "/market" for 203.159.55.106 at 2013-12-06 13:49:53 +0700
+I, [2013-12-06T13:49:53.886131 #18395]  INFO -- : Processing by MarketController#index as HTML
+I, [2013-12-06T13:49:53.886271 #18395]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}}
+I, [2013-12-06T13:49:53.893487 #18395]  INFO -- :   Rendered market/_categories.html.erb (1.7ms)
+I, [2013-12-06T13:49:53.896137 #18395]  INFO -- :   Rendered market/_goods.html.erb (2.2ms)
+I, [2013-12-06T13:49:53.897767 #18395]  INFO -- :   Rendered market/index.html.erb within layouts/application (8.1ms)
+I, [2013-12-06T13:49:53.905743 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:49:53.906331 #18395]  INFO -- : Completed 200 OK in 20ms (Views: 14.6ms | ActiveRecord: 2.6ms)
+I, [2013-12-06T13:49:55.630005 #18395]  INFO -- : Started GET "/goods/new" for 203.159.55.106 at 2013-12-06 13:49:55 +0700
+I, [2013-12-06T13:49:55.635000 #18395]  INFO -- : Processing by GoodsController#new as HTML
+I, [2013-12-06T13:49:55.776520 #18395]  INFO -- :   Rendered goods/_form.html.erb (115.4ms)
+I, [2013-12-06T13:49:55.776897 #18395]  INFO -- :   Rendered goods/new.html.erb within layouts/application (122.5ms)
+I, [2013-12-06T13:49:55.781432 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:49:55.782047 #18395]  INFO -- : Completed 200 OK in 147ms (Views: 139.0ms | ActiveRecord: 1.9ms)
+I, [2013-12-06T13:51:14.527517 #18395]  INFO -- : Started GET "/goods/new" for 203.159.55.106 at 2013-12-06 13:51:14 +0700
+I, [2013-12-06T13:51:14.533277 #18395]  INFO -- : Processing by GoodsController#new as HTML
+I, [2013-12-06T13:51:14.553082 #18395]  INFO -- :   Rendered goods/_form.html.erb (11.6ms)
+I, [2013-12-06T13:51:14.553366 #18395]  INFO -- :   Rendered goods/new.html.erb within layouts/application (12.2ms)
+I, [2013-12-06T13:51:14.558152 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:51:14.559059 #18395]  INFO -- : Completed 200 OK in 25ms (Views: 18.1ms | ActiveRecord: 1.8ms)
+I, [2013-12-06T13:51:14.655487 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.55.106 at 2013-12-06 13:51:14 +0700
+I, [2013-12-06T13:51:14.669779 #18411]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.55.106 at 2013-12-06 13:51:14 +0700
+I, [2013-12-06T13:51:18.014958 #18411]  INFO -- : Started GET "/market" for 203.159.55.106 at 2013-12-06 13:51:18 +0700
+I, [2013-12-06T13:51:18.023640 #18411]  INFO -- : Processing by MarketController#index as HTML
+I, [2013-12-06T13:51:18.023847 #18411]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}}
+I, [2013-12-06T13:51:18.089694 #18411]  INFO -- :   Rendered market/_categories.html.erb (4.6ms)
+I, [2013-12-06T13:51:18.109050 #18411]  INFO -- :   Rendered market/_goods.html.erb (18.0ms)
+I, [2013-12-06T13:51:18.110891 #18411]  INFO -- :   Rendered market/index.html.erb within layouts/application (33.5ms)
+I, [2013-12-06T13:51:18.259414 #18411]  INFO -- :   Rendered layouts/_footer.html.erb (0.8ms)
+I, [2013-12-06T13:51:18.260660 #18411]  INFO -- : Completed 200 OK in 236ms (Views: 170.5ms | ActiveRecord: 18.1ms)
+I, [2013-12-06T13:51:18.370747 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.55.106 at 2013-12-06 13:51:18 +0700
+I, [2013-12-06T13:51:18.373642 #18411]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.55.106 at 2013-12-06 13:51:18 +0700
+I, [2013-12-06T13:51:20.221789 #18411]  INFO -- : Started GET "/goods/new" for 203.159.55.106 at 2013-12-06 13:51:20 +0700
+I, [2013-12-06T13:51:20.226587 #18411]  INFO -- : Processing by GoodsController#new as HTML
+I, [2013-12-06T13:51:20.458888 #18411]  INFO -- :   Rendered goods/_form.html.erb (219.9ms)
+I, [2013-12-06T13:51:20.459229 #18411]  INFO -- :   Rendered goods/new.html.erb within layouts/application (222.1ms)
+I, [2013-12-06T13:51:20.464080 #18411]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:51:20.464686 #18411]  INFO -- : Completed 200 OK in 238ms (Views: 230.0ms | ActiveRecord: 1.8ms)
+I, [2013-12-06T13:51:20.567841 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.55.106 at 2013-12-06 13:51:20 +0700
+I, [2013-12-06T13:51:20.570469 #18411]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.55.106 at 2013-12-06 13:51:20 +0700
+I, [2013-12-06T13:51:43.945012 #18411]  INFO -- : Started GET "/goods/new" for 203.159.55.106 at 2013-12-06 13:51:43 +0700
+I, [2013-12-06T13:51:43.949987 #18411]  INFO -- : Processing by GoodsController#new as HTML
+I, [2013-12-06T13:51:44.001330 #18411]  INFO -- :   Rendered goods/_form.html.erb (43.6ms)
+I, [2013-12-06T13:51:44.001684 #18411]  INFO -- :   Rendered goods/new.html.erb within layouts/application (44.3ms)
+I, [2013-12-06T13:51:44.007441 #18411]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:51:44.012229 #18411]  INFO -- : Completed 200 OK in 62ms (Views: 47.1ms | ActiveRecord: 5.8ms)
+I, [2013-12-06T13:51:44.059658 #18411]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.55.106 at 2013-12-06 13:51:44 +0700
+I, [2013-12-06T13:51:44.064027 #18411]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.55.106 at 2013-12-06 13:51:44 +0700
+I, [2013-12-06T13:52:24.451977 #18411]  INFO -- : Started POST "/goods" for 203.159.55.106 at 2013-12-06 13:52:24 +0700
+I, [2013-12-06T13:52:24.454902 #18411]  INFO -- : Processing by GoodsController#create as HTML
+I, [2013-12-06T13:52:24.455249 #18411]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"qcP6kddKKmtkpkV4xOeoKqfoVCvZjUYAMSwn85S8dWs=", "good"=>{"title"=>"iphone 5s", "price"=>"999.99", "description"=>"iPhone 5S is a smartphone developed by Apple Inc. It is part of the iPhone line, and was released on September 20, 2013. Apple held an event to formally introduce the phone, and its mid-range counterpart, the iPhone 5C, on September 10, 2013.\r\n\r\nAs with the principle of iPhone 3GS and iPhone 4S, iPhone 5S is a revised version of its predecessor, iPhone 5. The phone maintains a similar design to its predecessor, aside from the introduction of a new home button design using a laser-cut sapphire cover surrounded by a metallic ring, Touch ID, a fingerprint recognition system built directly into the home button which can be used to unlock the phone and authenticate App Store and iTunes Store purchases, and an updated camera with a larger aperture and a dual-LED flash optimized for different color temperatures. It also introduced the 64-bit A7 processor (which Apple claimed was the first 64-bit processor to be used on a smartphone), accompanied by the M7 \"motion co-processor\", a dedicated processor for processing motion data from its accelerometer and gyroscopes without requiring the attention of the main processor. It was also the first Apple device to ship with the newest version of the iOS mobile operating system, iOS 7, which introduced a revamped visual appearance and other new features.\r\n\r\nReception towards the device was generally positive, with some outlets considering it to be the best smartphone available on the market due to its upgraded hardware, Touch ID, and other changes introduced by iOS 7. However, others criticized iPhone 5S for being too similar to its predecessors, while others showed security concerns about the Touch ID system. iPhone 5S, along with iPhone 5C, sold nine million units on their weekend of release, breaking Apple's sales record for iPhones, and was the best selling phone on all major US carriers in September 2013.", "category_id"=>"1", "image"=>#<ActionDispatch::Http::UploadedFile:0xbad7147c @tempfile=#<Tempfile:/tmp/RackMultipart20131206-18411-1uxu57g>, @original_filename="i5s.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"good[image]\"; filename=\"i5s.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Good"}
+I, [2013-12-06T13:52:24.469385 #18411]  INFO -- : Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/i5s20131206-18411-eradyf.jpg[0]'
+I, [2013-12-06T13:52:24.954869 #18411]  INFO -- : Command :: identify -format %m '/tmp/i5s20131206-18411-eradyf.jpg[0]'
+I, [2013-12-06T13:52:24.986114 #18411]  INFO -- : Command :: identify -format %m '/tmp/i5s20131206-18411-eradyf.jpg[0]'
+I, [2013-12-06T13:52:25.016399 #18411]  INFO -- : Command :: identify -format %m '/tmp/i5s20131206-18411-eradyf.jpg[0]'
+I, [2013-12-06T13:52:25.045817 #18411]  INFO -- : Command :: convert '/tmp/i5s20131206-18411-eradyf.jpg[0]' -auto-orient -resize "500x500>" '/tmp/i5s20131206-18411-eradyf20131206-18411-soo93w'
+I, [2013-12-06T13:52:25.354104 #18411]  INFO -- : Command :: file -b --mime '/tmp/i5s20131206-18411-eradyf20131206-18411-soo93w'
+I, [2013-12-06T13:52:25.435061 #18411]  INFO -- : Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/i5s20131206-18411-eradyf.jpg[0]'
+I, [2013-12-06T13:52:25.512881 #18411]  INFO -- : Command :: identify -format %m '/tmp/i5s20131206-18411-eradyf.jpg[0]'
+I, [2013-12-06T13:52:25.543484 #18411]  INFO -- : Command :: identify -format %m '/tmp/i5s20131206-18411-eradyf.jpg[0]'
+I, [2013-12-06T13:52:25.573643 #18411]  INFO -- : Command :: identify -format %m '/tmp/i5s20131206-18411-eradyf.jpg[0]'
+I, [2013-12-06T13:52:25.603241 #18411]  INFO -- : Command :: convert '/tmp/i5s20131206-18411-eradyf.jpg[0]' -auto-orient -resize "250x250>" '/tmp/i5s20131206-18411-eradyf20131206-18411-1w9axqq'
+I, [2013-12-06T13:52:25.818466 #18411]  INFO -- : Command :: file -b --mime '/tmp/i5s20131206-18411-eradyf20131206-18411-1w9axqq'
+I, [2013-12-06T13:52:26.027607 #18411]  INFO -- : Redirected to http://web8.cs.ait.ac.th/goods/1
+I, [2013-12-06T13:52:26.028188 #18411]  INFO -- : Completed 302 Found in 1573ms (ActiveRecord: 59.5ms)
+I, [2013-12-06T13:52:26.132740 #18411]  INFO -- : Started GET "/goods/1" for 203.159.55.106 at 2013-12-06 13:52:26 +0700
+I, [2013-12-06T13:52:26.135279 #18411]  INFO -- : Processing by GoodsController#show as HTML
+I, [2013-12-06T13:52:26.135435 #18411]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2013-12-06T13:52:26.279336 #18411]  INFO -- :   Rendered comments/_form.html.erb (38.6ms)
+I, [2013-12-06T13:52:26.279710 #18411]  INFO -- :   Rendered goods/show.html.erb within layouts/application (119.7ms)
+I, [2013-12-06T13:52:26.284290 #18411]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:52:26.284927 #18411]  INFO -- : Completed 200 OK in 149ms (Views: 135.5ms | ActiveRecord: 9.5ms)
+I, [2013-12-06T13:52:26.325375 #18411]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.55.106 at 2013-12-06 13:52:26 +0700
+I, [2013-12-06T13:52:26.328654 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.55.106 at 2013-12-06 13:52:26 +0700
+I, [2013-12-06T13:52:31.738107 #18411]  INFO -- : Started GET "/market" for 203.159.55.106 at 2013-12-06 13:52:31 +0700
+I, [2013-12-06T13:52:31.743387 #18411]  INFO -- : Processing by MarketController#index as HTML
+I, [2013-12-06T13:52:31.743539 #18411]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}}
+I, [2013-12-06T13:52:31.754839 #18411]  INFO -- :   Rendered market/_categories.html.erb (4.6ms)
+I, [2013-12-06T13:52:31.769950 #18411]  INFO -- :   Rendered market/_goods.html.erb (14.7ms)
+I, [2013-12-06T13:52:31.770351 #18411]  INFO -- :   Rendered market/index.html.erb within layouts/application (22.6ms)
+I, [2013-12-06T13:52:31.778385 #18411]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:52:31.779071 #18411]  INFO -- : Completed 200 OK in 35ms (Views: 27.5ms | ActiveRecord: 4.5ms)
+I, [2013-12-06T13:52:31.906917 #18411]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.55.106 at 2013-12-06 13:52:31 +0700
+I, [2013-12-06T13:52:31.913882 #18411]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.55.106 at 2013-12-06 13:52:31 +0700
+I, [2013-12-06T13:52:34.951304 #18411]  INFO -- : Started GET "/goods/1" for 203.159.55.106 at 2013-12-06 13:52:34 +0700
+I, [2013-12-06T13:52:34.953832 #18411]  INFO -- : Processing by GoodsController#show as HTML
+I, [2013-12-06T13:52:34.954233 #18411]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2013-12-06T13:52:34.976520 #18411]  INFO -- :   Rendered comments/_form.html.erb (3.7ms)
+I, [2013-12-06T13:52:34.976842 #18411]  INFO -- :   Rendered goods/show.html.erb within layouts/application (17.8ms)
+I, [2013-12-06T13:52:34.981023 #18411]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:52:34.981705 #18411]  INFO -- : Completed 200 OK in 27ms (Views: 20.9ms | ActiveRecord: 3.1ms)
+I, [2013-12-06T13:52:35.309373 #18411]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.55.106 at 2013-12-06 13:52:35 +0700
+I, [2013-12-06T13:52:35.319234 #18411]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.55.106 at 2013-12-06 13:52:35 +0700
+I, [2013-12-06T13:53:05.156820 #18411]  INFO -- : Started POST "/goods/1/comments" for 203.159.55.106 at 2013-12-06 13:53:05 +0700
+I, [2013-12-06T13:53:05.161985 #18411]  INFO -- : Processing by CommentsController#create as JS
+I, [2013-12-06T13:53:05.162171 #18411]  INFO -- :   Parameters: {"utf8"=>"✓", "comment"=>{"content"=>"Seems like in good condition \r\nif the price is negotiable ?\r\n"}, "commit"=>"Create Comment", "good_id"=>"1"}
+I, [2013-12-06T13:53:05.242297 #18411]  INFO -- :   Rendered comments/_show.html.erb (8.7ms)
+I, [2013-12-06T13:53:05.242731 #18411]  INFO -- :   Rendered comments/create_success.js.erb (13.0ms)
+I, [2013-12-06T13:53:05.243268 #18411]  INFO -- : Completed 200 OK in 81ms (Views: 27.8ms | ActiveRecord: 35.2ms)
+I, [2013-12-06T13:53:14.941552 #18411]  INFO -- : Started GET "/users/edit" for 203.159.55.106 at 2013-12-06 13:53:14 +0700
+I, [2013-12-06T13:53:14.946344 #18411]  INFO -- : Processing by Devise::RegistrationsController#edit as HTML
+I, [2013-12-06T13:53:15.000728 #18411]  INFO -- :   Rendered devise/registrations/edit.html.erb within layouts/application (34.1ms)
+I, [2013-12-06T13:53:15.005183 #18411]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:53:15.006032 #18411]  INFO -- : Completed 200 OK in 59ms (Views: 51.2ms | ActiveRecord: 1.2ms)
+I, [2013-12-06T13:53:15.152839 #18411]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.55.106 at 2013-12-06 13:53:15 +0700
+I, [2013-12-06T13:53:15.161268 #18411]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.55.106 at 2013-12-06 13:53:15 +0700
+I, [2013-12-06T13:54:25.274487 #18411]  INFO -- : Started PUT "/users" for 203.159.55.106 at 2013-12-06 13:54:25 +0700
+I, [2013-12-06T13:54:25.280674 #18411]  INFO -- : Processing by Devise::RegistrationsController#update as HTML
+I, [2013-12-06T13:54:25.280926 #18411]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"qcP6kddKKmtkpkV4xOeoKqfoVCvZjUYAMSwn85S8dWs=", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xbae34134 @tempfile=#<Tempfile:/tmp/RackMultipart20131206-18411-i0wvkk>, @original_filename="侍_www.shufami.com.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"\xE4\xBE\x8D_www.shufami.com.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update"}
+I, [2013-12-06T13:54:25.509397 #18411]  INFO -- : Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/侍_www.shufami.com20131206-18411-caurop.png[0]'
+I, [2013-12-06T13:54:25.583459 #18411]  INFO -- : Command :: identify -format %m '/tmp/侍_www.shufami.com20131206-18411-caurop.png[0]'
+I, [2013-12-06T13:54:25.610018 #18411]  INFO -- : Command :: identify -format %m '/tmp/侍_www.shufami.com20131206-18411-caurop.png[0]'
+I, [2013-12-06T13:54:25.634858 #18411]  INFO -- : Command :: identify -format %m '/tmp/侍_www.shufami.com20131206-18411-caurop.png[0]'
+I, [2013-12-06T13:54:25.660222 #18411]  INFO -- : Command :: convert '/tmp/侍_www.shufami.com20131206-18411-caurop.png[0]' -auto-orient -resize "250x250>" '/tmp/侍_www.shufami.com20131206-18411-caurop20131206-18411-1tx9ipb'
+I, [2013-12-06T13:54:25.772389 #18411]  INFO -- : Command :: file -b --mime '/tmp/侍_www.shufami.com20131206-18411-caurop20131206-18411-1tx9ipb'
+I, [2013-12-06T13:54:25.783587 #18411]  INFO -- : Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/侍_www.shufami.com20131206-18411-caurop.png[0]'
+I, [2013-12-06T13:54:25.828875 #18411]  INFO -- : Command :: identify -format %m '/tmp/侍_www.shufami.com20131206-18411-caurop.png[0]'
+I, [2013-12-06T13:54:25.854847 #18411]  INFO -- : Command :: identify -format %m '/tmp/侍_www.shufami.com20131206-18411-caurop.png[0]'
+I, [2013-12-06T13:54:25.879411 #18411]  INFO -- : Command :: identify -format %m '/tmp/侍_www.shufami.com20131206-18411-caurop.png[0]'
+I, [2013-12-06T13:54:25.904367 #18411]  INFO -- : Command :: convert '/tmp/侍_www.shufami.com20131206-18411-caurop.png[0]' -auto-orient -resize "150x150>" '/tmp/侍_www.shufami.com20131206-18411-caurop20131206-18411-1h1w5xj'
+I, [2013-12-06T13:54:26.078771 #18411]  INFO -- : Command :: file -b --mime '/tmp/侍_www.shufami.com20131206-18411-caurop20131206-18411-1h1w5xj'
+I, [2013-12-06T13:54:26.129939 #18411]  INFO -- :   Rendered devise/registrations/edit.html.erb within layouts/application (13.6ms)
+I, [2013-12-06T13:54:26.134761 #18411]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:54:26.135558 #18411]  INFO -- : Completed 200 OK in 854ms (Views: 19.6ms | ActiveRecord: 3.8ms)
+I, [2013-12-06T13:54:26.352932 #18411]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.55.106 at 2013-12-06 13:54:26 +0700
+I, [2013-12-06T13:54:26.360217 #18411]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.55.106 at 2013-12-06 13:54:26 +0700
+I, [2013-12-06T13:54:26.392448 #18411]  INFO -- : Started GET "/system/users/avatars/000/000/001/thumb/%e4%be%8d_www.shufami.com.png?1386312865" for 203.159.55.106 at 2013-12-06 13:54:26 +0700
+F, [2013-12-06T13:54:26.394476 #18411] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/system/users/avatars/000/000/001/thumb/%e4%be%8d_www.shufami.com.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+I, [2013-12-06T13:54:26.654107 #18411]  INFO -- : Started GET "/system/users/avatars/000/000/001/thumb/%e4%be%8d_www.shufami.com.png?1386312865" for 203.159.55.106 at 2013-12-06 13:54:26 +0700
+F, [2013-12-06T13:54:26.656098 #18411] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/system/users/avatars/000/000/001/thumb/%e4%be%8d_www.shufami.com.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+I, [2013-12-06T13:55:10.019562 #18411]  INFO -- : Started PUT "/users" for 203.159.55.106 at 2013-12-06 13:55:10 +0700
+I, [2013-12-06T13:55:10.023370 #18411]  INFO -- : Processing by Devise::RegistrationsController#update as HTML
+I, [2013-12-06T13:55:10.023656 #18411]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"qcP6kddKKmtkpkV4xOeoKqfoVCvZjUYAMSwn85S8dWs=", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xbab86c34 @tempfile=#<Tempfile:/tmp/RackMultipart20131206-18411-1wrke52>, @original_filename="Järntorget.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"Ja\xCC\x88rntorget.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update"}
+I, [2013-12-06T13:55:10.250848 #18411]  INFO -- : Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/Järntorget20131206-18411-vlqh9y.jpg[0]'
+I, [2013-12-06T13:55:10.300772 #18411]  INFO -- : Command :: identify -format %m '/tmp/Järntorget20131206-18411-vlqh9y.jpg[0]'
+I, [2013-12-06T13:55:10.327698 #18411]  INFO -- : Command :: identify -format %m '/tmp/Järntorget20131206-18411-vlqh9y.jpg[0]'
+I, [2013-12-06T13:55:10.353739 #18411]  INFO -- : Command :: identify -format %m '/tmp/Järntorget20131206-18411-vlqh9y.jpg[0]'
+I, [2013-12-06T13:55:10.382307 #18411]  INFO -- : Command :: convert '/tmp/Järntorget20131206-18411-vlqh9y.jpg[0]' -auto-orient -resize "250x250>" '/tmp/Järntorget20131206-18411-vlqh9y20131206-18411-1obk2xk'
+I, [2013-12-06T13:55:10.495361 #18411]  INFO -- : Command :: file -b --mime '/tmp/Järntorget20131206-18411-vlqh9y20131206-18411-1obk2xk'
+I, [2013-12-06T13:55:10.508619 #18411]  INFO -- : Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/Järntorget20131206-18411-vlqh9y.jpg[0]'
+I, [2013-12-06T13:55:10.556550 #18411]  INFO -- : Command :: identify -format %m '/tmp/Järntorget20131206-18411-vlqh9y.jpg[0]'
+I, [2013-12-06T13:55:10.583084 #18411]  INFO -- : Command :: identify -format %m '/tmp/Järntorget20131206-18411-vlqh9y.jpg[0]'
+I, [2013-12-06T13:55:10.609140 #18411]  INFO -- : Command :: identify -format %m '/tmp/Järntorget20131206-18411-vlqh9y.jpg[0]'
+I, [2013-12-06T13:55:10.634718 #18411]  INFO -- : Command :: convert '/tmp/Järntorget20131206-18411-vlqh9y.jpg[0]' -auto-orient -resize "150x150>" '/tmp/Järntorget20131206-18411-vlqh9y20131206-18411-8xpf5n'
+I, [2013-12-06T13:55:10.720590 #18411]  INFO -- : Command :: file -b --mime '/tmp/Järntorget20131206-18411-vlqh9y20131206-18411-8xpf5n'
+I, [2013-12-06T13:55:10.767256 #18411]  INFO -- : Redirected to http://web8.cs.ait.ac.th/
+I, [2013-12-06T13:55:10.767641 #18411]  INFO -- : Completed 302 Found in 743ms (ActiveRecord: 18.8ms)
+I, [2013-12-06T13:55:10.918165 #18411]  INFO -- : Started GET "/" for 203.159.55.106 at 2013-12-06 13:55:10 +0700
+I, [2013-12-06T13:55:10.921542 #18411]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2013-12-06T13:55:10.927255 #18411]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (1.4ms)
+I, [2013-12-06T13:55:10.933812 #18411]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:55:10.934204 #18411]  INFO -- : Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.8ms)
+I, [2013-12-06T13:55:11.113655 #18411]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.55.106 at 2013-12-06 13:55:11 +0700
+I, [2013-12-06T13:55:11.120252 #18411]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.55.106 at 2013-12-06 13:55:11 +0700
+I, [2013-12-06T13:55:22.827946 #18411]  INFO -- : Started GET "/market" for 203.159.55.106 at 2013-12-06 13:55:22 +0700
+I, [2013-12-06T13:55:22.830405 #18411]  INFO -- : Processing by MarketController#index as HTML
+I, [2013-12-06T13:55:22.830543 #18411]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}}
+I, [2013-12-06T13:55:22.840212 #18411]  INFO -- :   Rendered market/_categories.html.erb (4.4ms)
+I, [2013-12-06T13:55:22.853502 #18411]  INFO -- :   Rendered market/_goods.html.erb (12.9ms)
+I, [2013-12-06T13:55:22.853853 #18411]  INFO -- :   Rendered market/index.html.erb within layouts/application (20.1ms)
+I, [2013-12-06T13:55:22.861870 #18411]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:55:22.862460 #18411]  INFO -- : Completed 200 OK in 32ms (Views: 25.4ms | ActiveRecord: 3.9ms)
+I, [2013-12-06T13:55:22.964793 #18411]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.55.106 at 2013-12-06 13:55:22 +0700
+I, [2013-12-06T13:55:23.131949 #18411]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.55.106 at 2013-12-06 13:55:23 +0700
+I, [2013-12-06T13:55:28.227520 #18411]  INFO -- : Started GET "/goods/1" for 203.159.55.106 at 2013-12-06 13:55:28 +0700
+I, [2013-12-06T13:55:28.230085 #18411]  INFO -- : Processing by GoodsController#show as HTML
+I, [2013-12-06T13:55:28.230262 #18411]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2013-12-06T13:55:28.257105 #18411]  INFO -- :   Rendered comments/_show.html.erb (6.8ms)
+I, [2013-12-06T13:55:28.262355 #18411]  INFO -- :   Rendered comments/_form.html.erb (3.8ms)
+I, [2013-12-06T13:55:28.262613 #18411]  INFO -- :   Rendered goods/show.html.erb within layouts/application (27.2ms)
+I, [2013-12-06T13:55:28.267959 #18411]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:55:28.268576 #18411]  INFO -- : Completed 200 OK in 38ms (Views: 31.2ms | ActiveRecord: 3.6ms)
+I, [2013-12-06T13:55:28.360608 #18411]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.55.106 at 2013-12-06 13:55:28 +0700
+I, [2013-12-06T13:55:28.367820 #18411]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.55.106 at 2013-12-06 13:55:28 +0700
+I, [2013-12-06T13:55:31.889130 #18411]  INFO -- : Started GET "/goods/1/edit" for 203.159.55.106 at 2013-12-06 13:55:31 +0700
+I, [2013-12-06T13:55:31.893305 #18411]  INFO -- : Processing by GoodsController#edit as HTML
+I, [2013-12-06T13:55:31.893478 #18411]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2013-12-06T13:55:31.927026 #18411]  INFO -- :   Rendered goods/_form.html.erb (14.3ms)
+I, [2013-12-06T13:55:31.927342 #18411]  INFO -- :   Rendered goods/edit.html.erb within layouts/application (15.9ms)
+I, [2013-12-06T13:55:31.933141 #18411]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:55:31.933778 #18411]  INFO -- : Completed 200 OK in 40ms (Views: 30.5ms | ActiveRecord: 2.8ms)
+I, [2013-12-06T13:55:32.039545 #18411]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.55.106 at 2013-12-06 13:55:32 +0700
+I, [2013-12-06T13:55:32.043687 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.55.106 at 2013-12-06 13:55:32 +0700
+I, [2013-12-06T13:56:00.158452 #18395]  INFO -- : Started PATCH "/goods/1" for 203.159.55.106 at 2013-12-06 13:56:00 +0700
+I, [2013-12-06T13:56:00.163695 #18395]  INFO -- : Processing by GoodsController#update as HTML
+I, [2013-12-06T13:56:00.164150 #18395]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"qcP6kddKKmtkpkV4xOeoKqfoVCvZjUYAMSwn85S8dWs=", "good"=>{"title"=>"iphone 5s", "price"=>"999.99", "description"=>"iPhone 5S is a smartphone developed by Apple Inc. It is part of the iPhone line, and was released on September 20, 2013. Apple held an event to formally introduce the phone, and its mid-range counterpart, the iPhone 5C, on September 10, 2013.\r\n\r\nAs with the principle of iPhone 3GS and iPhone 4S, iPhone 5S is a revised version of its predecessor, iPhone 5. The phone maintains a similar design to its predecessor, aside from the introduction of a new home button design using a laser-cut sapphire cover surrounded by a metallic ring, Touch ID, a fingerprint recognition system built directly into the home button which can be used to unlock the phone and authenticate App Store and iTunes Store purchases, and an updated camera with a larger aperture and a dual-LED flash optimized for different color temperatures. It also introduced the 64-bit A7 processor (which Apple claimed was the first 64-bit processor to be used on a smartphone), accompanied by the M7 \"motion co-processor\", a dedicated processor for processing motion data from its accelerometer and gyroscopes without requiring the attention of the main processor. It was also the first Apple device to ship with the newest version of the iOS mobile operating system, iOS 7, which introduced a revamped visual appearance and other new features.\r\n\r\nReception towards the device was generally positive, with some outlets considering it to be the best smartphone available on the market due to its upgraded hardware, Touch ID, and other changes introduced by iOS 7. However, others criticized iPhone 5S for being too similar to its predecessors, while others showed security concerns about the Touch ID system. iPhone 5S, along with iPhone 5C, sold nine million units on their weekend of release, breaking Apple's sales record for iPhones, and was the best selling phone on all major US carriers in September 2013.", "category_id"=>"4", "image"=>#<ActionDispatch::Http::UploadedFile:0xbae500c8 @tempfile=#<Tempfile:/tmp/RackMultipart20131206-18395-1xbpx3p>, @original_filename="i5s.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"good[image]\"; filename=\"i5s.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Good", "id"=>"1"}
+I, [2013-12-06T13:56:00.217167 #18395]  INFO -- : Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/i5s20131206-18395-1clepma.jpg[0]'
+I, [2013-12-06T13:56:00.290053 #18395]  INFO -- : Command :: identify -format %m '/tmp/i5s20131206-18395-1clepma.jpg[0]'
+I, [2013-12-06T13:56:00.314640 #18395]  INFO -- : Command :: identify -format %m '/tmp/i5s20131206-18395-1clepma.jpg[0]'
+I, [2013-12-06T13:56:00.337770 #18395]  INFO -- : Command :: identify -format %m '/tmp/i5s20131206-18395-1clepma.jpg[0]'
+I, [2013-12-06T13:56:00.361254 #18395]  INFO -- : Command :: convert '/tmp/i5s20131206-18395-1clepma.jpg[0]' -auto-orient -resize "500x500>" '/tmp/i5s20131206-18395-1clepma20131206-18395-1avfvlp'
+I, [2013-12-06T13:56:00.729056 #18395]  INFO -- : Command :: file -b --mime '/tmp/i5s20131206-18395-1clepma20131206-18395-1avfvlp'
+I, [2013-12-06T13:56:00.740583 #18395]  INFO -- : Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/i5s20131206-18395-1clepma.jpg[0]'
+I, [2013-12-06T13:56:00.795498 #18395]  INFO -- : Command :: identify -format %m '/tmp/i5s20131206-18395-1clepma.jpg[0]'
+I, [2013-12-06T13:56:00.816543 #18395]  INFO -- : Command :: identify -format %m '/tmp/i5s20131206-18395-1clepma.jpg[0]'
+I, [2013-12-06T13:56:00.836411 #18395]  INFO -- : Command :: identify -format %m '/tmp/i5s20131206-18395-1clepma.jpg[0]'
+I, [2013-12-06T13:56:00.856072 #18395]  INFO -- : Command :: convert '/tmp/i5s20131206-18395-1clepma.jpg[0]' -auto-orient -resize "250x250>" '/tmp/i5s20131206-18395-1clepma20131206-18395-pedq2r'
+I, [2013-12-06T13:56:01.028604 #18395]  INFO -- : Command :: file -b --mime '/tmp/i5s20131206-18395-1clepma20131206-18395-pedq2r'
+I, [2013-12-06T13:56:01.052209 #18395]  INFO -- : [paperclip] deleting /home/csim/usedandfound/public/system/goods/images/000/000/001/original/i5s.jpg
+I, [2013-12-06T13:56:01.052879 #18395]  INFO -- : [paperclip] deleting /home/csim/usedandfound/public/system/goods/images/000/000/001/medium/i5s.jpg
+I, [2013-12-06T13:56:01.053199 #18395]  INFO -- : [paperclip] deleting /home/csim/usedandfound/public/system/goods/images/000/000/001/thumb/i5s.jpg
+I, [2013-12-06T13:56:01.092618 #18395]  INFO -- : Redirected to http://web8.cs.ait.ac.th/goods/1
+I, [2013-12-06T13:56:01.093107 #18395]  INFO -- : Completed 302 Found in 929ms (ActiveRecord: 35.2ms)
+I, [2013-12-06T13:56:01.278015 #18395]  INFO -- : Started GET "/goods/1" for 203.159.55.106 at 2013-12-06 13:56:01 +0700
+I, [2013-12-06T13:56:01.280982 #18395]  INFO -- : Processing by GoodsController#show as HTML
+I, [2013-12-06T13:56:01.281112 #18395]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2013-12-06T13:56:01.402974 #18395]  INFO -- :   Rendered comments/_show.html.erb (8.8ms)
+I, [2013-12-06T13:56:01.411385 #18395]  INFO -- :   Rendered comments/_form.html.erb (6.1ms)
+I, [2013-12-06T13:56:01.411655 #18395]  INFO -- :   Rendered goods/show.html.erb within layouts/application (124.2ms)
+I, [2013-12-06T13:56:01.416457 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:56:01.417048 #18395]  INFO -- : Completed 200 OK in 136ms (Views: 120.1ms | ActiveRecord: 12.2ms)
+I, [2013-12-06T13:56:01.544163 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.55.106 at 2013-12-06 13:56:01 +0700
+I, [2013-12-06T13:56:01.550533 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.55.106 at 2013-12-06 13:56:01 +0700
+I, [2013-12-06T13:56:55.402193 #18395]  INFO -- : Started GET "/" for 203.159.52.227 at 2013-12-06 13:56:55 +0700
+I, [2013-12-06T13:56:55.405711 #18395]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2013-12-06T13:56:55.409220 #18395]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (1.0ms)
+I, [2013-12-06T13:56:55.414657 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:56:55.415162 #18395]  INFO -- : Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+I, [2013-12-06T13:56:55.465083 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.52.227 at 2013-12-06 13:56:55 +0700
+I, [2013-12-06T13:56:55.486227 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.52.227 at 2013-12-06 13:56:55 +0700
+I, [2013-12-06T13:56:58.410793 #18395]  INFO -- : Started GET "/market" for 203.159.52.227 at 2013-12-06 13:56:58 +0700
+I, [2013-12-06T13:56:58.412904 #18395]  INFO -- : Processing by MarketController#index as HTML
+I, [2013-12-06T13:56:58.413033 #18395]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}}
+I, [2013-12-06T13:56:58.423359 #18395]  INFO -- :   Rendered market/_categories.html.erb (4.5ms)
+I, [2013-12-06T13:56:58.438638 #18395]  INFO -- :   Rendered market/_goods.html.erb (14.8ms)
+I, [2013-12-06T13:56:58.439082 #18395]  INFO -- :   Rendered market/index.html.erb within layouts/application (22.5ms)
+I, [2013-12-06T13:56:58.443951 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:56:58.444500 #18395]  INFO -- : Completed 200 OK in 31ms (Views: 25.2ms | ActiveRecord: 3.3ms)
+I, [2013-12-06T13:57:00.526634 #18395]  INFO -- : Started GET "/goods/1" for 203.159.52.227 at 2013-12-06 13:57:00 +0700
+I, [2013-12-06T13:57:00.529268 #18395]  INFO -- : Processing by GoodsController#show as HTML
+I, [2013-12-06T13:57:00.529391 #18395]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2013-12-06T13:57:00.555127 #18395]  INFO -- :   Rendered comments/_show.html.erb (5.7ms)
+I, [2013-12-06T13:57:00.557041 #18395]  INFO -- :   Rendered goods/show.html.erb within layouts/application (23.1ms)
+I, [2013-12-06T13:57:00.561333 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:57:00.561897 #18395]  INFO -- : Completed 200 OK in 32ms (Views: 26.9ms | ActiveRecord: 2.3ms)
+I, [2013-12-06T13:57:06.473508 #18395]  INFO -- : Started GET "/market" for 203.159.52.227 at 2013-12-06 13:57:06 +0700
+I, [2013-12-06T13:57:06.476113 #18395]  INFO -- : Processing by MarketController#index as HTML
+I, [2013-12-06T13:57:06.476243 #18395]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}}
+I, [2013-12-06T13:57:06.485111 #18395]  INFO -- :   Rendered market/_categories.html.erb (3.7ms)
+I, [2013-12-06T13:57:06.498105 #18395]  INFO -- :   Rendered market/_goods.html.erb (12.6ms)
+I, [2013-12-06T13:57:06.498435 #18395]  INFO -- :   Rendered market/index.html.erb within layouts/application (19.3ms)
+I, [2013-12-06T13:57:06.503240 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:57:06.503823 #18395]  INFO -- : Completed 200 OK in 27ms (Views: 22.2ms | ActiveRecord: 3.0ms)
+I, [2013-12-06T13:57:06.536200 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.52.227 at 2013-12-06 13:57:06 +0700
+I, [2013-12-06T13:57:06.547314 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.52.227 at 2013-12-06 13:57:06 +0700
+I, [2013-12-06T13:57:08.110264 #18395]  INFO -- : Started GET "/market/category/3" for 203.159.52.227 at 2013-12-06 13:57:08 +0700
+I, [2013-12-06T13:57:08.113590 #18395]  INFO -- : Processing by MarketController#category as HTML
+I, [2013-12-06T13:57:08.113723 #18395]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}, "id"=>"3"}
+I, [2013-12-06T13:57:08.144482 #18395]  INFO -- :   Rendered market/_goods.html.erb (3.1ms)
+I, [2013-12-06T13:57:08.148276 #18395]  INFO -- :   Rendered market/_categories.html.erb (3.4ms)
+I, [2013-12-06T13:57:08.150231 #18395]  INFO -- :   Rendered market/category.html.erb within layouts/application (12.3ms)
+I, [2013-12-06T13:57:08.154960 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:57:08.155504 #18395]  INFO -- : Completed 200 OK in 42ms (Views: 30.9ms | ActiveRecord: 2.9ms)
+I, [2013-12-06T13:57:08.187907 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.52.227 at 2013-12-06 13:57:08 +0700
+I, [2013-12-06T13:57:08.200403 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.52.227 at 2013-12-06 13:57:08 +0700
+I, [2013-12-06T13:57:11.572753 #18395]  INFO -- : Started GET "/market" for 203.159.52.227 at 2013-12-06 13:57:11 +0700
+I, [2013-12-06T13:57:11.575513 #18395]  INFO -- : Processing by MarketController#index as HTML
+I, [2013-12-06T13:57:11.575664 #18395]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}}
+I, [2013-12-06T13:57:11.585458 #18395]  INFO -- :   Rendered market/_categories.html.erb (4.0ms)
+I, [2013-12-06T13:57:11.598648 #18395]  INFO -- :   Rendered market/_goods.html.erb (12.8ms)
+I, [2013-12-06T13:57:11.598974 #18395]  INFO -- :   Rendered market/index.html.erb within layouts/application (20.0ms)
+I, [2013-12-06T13:57:11.604092 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:57:11.604644 #18395]  INFO -- : Completed 200 OK in 28ms (Views: 22.9ms | ActiveRecord: 3.2ms)
+I, [2013-12-06T13:57:11.652003 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.52.227 at 2013-12-06 13:57:11 +0700
+I, [2013-12-06T13:57:11.664110 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.52.227 at 2013-12-06 13:57:11 +0700
+I, [2013-12-06T13:57:14.451027 #18395]  INFO -- : Started GET "/market" for 203.159.52.227 at 2013-12-06 13:57:14 +0700
+I, [2013-12-06T13:57:14.453422 #18395]  INFO -- : Processing by MarketController#index as HTML
+I, [2013-12-06T13:57:14.453551 #18395]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}}
+I, [2013-12-06T13:57:14.462203 #18395]  INFO -- :   Rendered market/_categories.html.erb (3.7ms)
+I, [2013-12-06T13:57:14.475448 #18395]  INFO -- :   Rendered market/_goods.html.erb (12.8ms)
+I, [2013-12-06T13:57:14.475832 #18395]  INFO -- :   Rendered market/index.html.erb within layouts/application (19.3ms)
+I, [2013-12-06T13:57:14.481081 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:57:14.481662 #18395]  INFO -- : Completed 200 OK in 28ms (Views: 22.7ms | ActiveRecord: 3.0ms)
+I, [2013-12-06T13:57:14.524741 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.52.227 at 2013-12-06 13:57:14 +0700
+I, [2013-12-06T13:57:14.540761 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.52.227 at 2013-12-06 13:57:14 +0700
+I, [2013-12-06T13:57:16.678808 #18395]  INFO -- : Started GET "/goods/1" for 203.159.52.227 at 2013-12-06 13:57:16 +0700
+I, [2013-12-06T13:57:16.681262 #18395]  INFO -- : Processing by GoodsController#show as HTML
+I, [2013-12-06T13:57:16.681384 #18395]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2013-12-06T13:57:16.790883 #18395]  INFO -- :   Rendered comments/_show.html.erb (6.0ms)
+I, [2013-12-06T13:57:16.792967 #18395]  INFO -- :   Rendered goods/show.html.erb within layouts/application (105.9ms)
+I, [2013-12-06T13:57:16.797243 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:57:16.797826 #18395]  INFO -- : Completed 200 OK in 116ms (Views: 109.1ms | ActiveRecord: 3.4ms)
+I, [2013-12-06T13:57:16.895086 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.52.227 at 2013-12-06 13:57:16 +0700
+I, [2013-12-06T13:57:16.906938 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.52.227 at 2013-12-06 13:57:16 +0700
+I, [2013-12-06T13:57:25.615711 #18395]  INFO -- : Started GET "/users/sign_up" for 203.159.52.227 at 2013-12-06 13:57:25 +0700
+I, [2013-12-06T13:57:25.618354 #18395]  INFO -- : Processing by Devise::RegistrationsController#new as HTML
+I, [2013-12-06T13:57:25.631355 #18395]  INFO -- :   Rendered devise/shared/_links.erb (0.5ms)
+I, [2013-12-06T13:57:25.631603 #18395]  INFO -- :   Rendered devise/registrations/new.html.erb within layouts/application (9.2ms)
+I, [2013-12-06T13:57:25.637669 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:57:25.638163 #18395]  INFO -- : Completed 200 OK in 20ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+I, [2013-12-06T13:57:25.675510 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.52.227 at 2013-12-06 13:57:25 +0700
+I, [2013-12-06T13:57:25.687490 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.52.227 at 2013-12-06 13:57:25 +0700
+I, [2013-12-06T13:57:28.326920 #18395]  INFO -- : Started POST "/users" for 203.159.52.227 at 2013-12-06 13:57:28 +0700
+I, [2013-12-06T13:57:28.329115 #18395]  INFO -- : Processing by Devise::RegistrationsController#create as HTML
+I, [2013-12-06T13:57:28.329274 #18395]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"D6rkMTtAZM0YkVWcotOeGsJier1bRsvIdYUtFxJlPa8=", "user"=>{"user_name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+I, [2013-12-06T13:57:28.360194 #18395]  INFO -- :   Rendered devise/shared/_links.erb (0.6ms)
+I, [2013-12-06T13:57:28.360488 #18395]  INFO -- :   Rendered devise/registrations/new.html.erb within layouts/application (13.9ms)
+I, [2013-12-06T13:57:28.364798 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:57:28.365548 #18395]  INFO -- : Completed 200 OK in 36ms (Views: 19.2ms | ActiveRecord: 1.2ms)
+I, [2013-12-06T13:57:28.405287 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.52.227 at 2013-12-06 13:57:28 +0700
+I, [2013-12-06T13:57:28.417184 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.52.227 at 2013-12-06 13:57:28 +0700
+I, [2013-12-06T13:58:00.003066 #18395]  INFO -- : Started POST "/users" for 203.159.52.227 at 2013-12-06 13:58:00 +0700
+I, [2013-12-06T13:58:00.006851 #18395]  INFO -- : Processing by Devise::RegistrationsController#create as HTML
+I, [2013-12-06T13:58:00.007046 #18395]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"D6rkMTtAZM0YkVWcotOeGsJier1bRsvIdYUtFxJlPa8=", "user"=>{"user_name"=>"Mike", "email"=>"mike@ait.asia", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+I, [2013-12-06T13:58:00.278998 #18395]  INFO -- : Redirected to http://web8.cs.ait.ac.th/
+I, [2013-12-06T13:58:00.279445 #18395]  INFO -- : Completed 302 Found in 272ms (ActiveRecord: 43.6ms)
+I, [2013-12-06T13:58:00.345853 #18395]  INFO -- : Started GET "/" for 203.159.52.227 at 2013-12-06 13:58:00 +0700
+I, [2013-12-06T13:58:00.348060 #18395]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2013-12-06T13:58:00.350906 #18395]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (0.9ms)
+I, [2013-12-06T13:58:00.358591 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:58:00.359181 #18395]  INFO -- : Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 1.0ms)
+I, [2013-12-06T13:58:00.397986 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.52.227 at 2013-12-06 13:58:00 +0700
+I, [2013-12-06T13:58:00.409866 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.52.227 at 2013-12-06 13:58:00 +0700
+I, [2013-12-06T13:58:01.994419 #18395]  INFO -- : Started GET "/market" for 203.159.52.227 at 2013-12-06 13:58:01 +0700
+I, [2013-12-06T13:58:01.996882 #18395]  INFO -- : Processing by MarketController#index as HTML
+I, [2013-12-06T13:58:01.997030 #18395]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}}
+I, [2013-12-06T13:58:02.006449 #18395]  INFO -- :   Rendered market/_categories.html.erb (3.8ms)
+I, [2013-12-06T13:58:02.020037 #18395]  INFO -- :   Rendered market/_goods.html.erb (13.2ms)
+I, [2013-12-06T13:58:02.020366 #18395]  INFO -- :   Rendered market/index.html.erb within layouts/application (20.1ms)
+I, [2013-12-06T13:58:02.027330 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:58:02.027972 #18395]  INFO -- : Completed 200 OK in 31ms (Views: 24.1ms | ActiveRecord: 4.2ms)
+I, [2013-12-06T13:58:02.062757 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.52.227 at 2013-12-06 13:58:02 +0700
+I, [2013-12-06T13:58:02.074127 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.52.227 at 2013-12-06 13:58:02 +0700
+I, [2013-12-06T13:58:04.775730 #18395]  INFO -- : Started GET "/market/category/1" for 203.159.52.227 at 2013-12-06 13:58:04 +0700
+I, [2013-12-06T13:58:04.778206 #18395]  INFO -- : Processing by MarketController#category as HTML
+I, [2013-12-06T13:58:04.778341 #18395]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}, "id"=>"1"}
+I, [2013-12-06T13:58:04.788868 #18395]  INFO -- :   Rendered market/_goods.html.erb (2.2ms)
+I, [2013-12-06T13:58:04.792541 #18395]  INFO -- :   Rendered market/_categories.html.erb (3.3ms)
+I, [2013-12-06T13:58:04.794495 #18395]  INFO -- :   Rendered market/category.html.erb within layouts/application (9.8ms)
+I, [2013-12-06T13:58:04.801840 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:58:04.802404 #18395]  INFO -- : Completed 200 OK in 24ms (Views: 16.8ms | ActiveRecord: 2.5ms)
+I, [2013-12-06T13:58:04.836781 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.52.227 at 2013-12-06 13:58:04 +0700
+I, [2013-12-06T13:58:04.848868 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.52.227 at 2013-12-06 13:58:04 +0700
+I, [2013-12-06T13:58:11.558365 #18395]  INFO -- : Started GET "/market" for 203.159.52.227 at 2013-12-06 13:58:11 +0700
+I, [2013-12-06T13:58:11.560825 #18395]  INFO -- : Processing by MarketController#index as HTML
+I, [2013-12-06T13:58:11.560955 #18395]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}}
+I, [2013-12-06T13:58:11.570175 #18395]  INFO -- :   Rendered market/_categories.html.erb (4.1ms)
+I, [2013-12-06T13:58:11.583384 #18395]  INFO -- :   Rendered market/_goods.html.erb (12.8ms)
+I, [2013-12-06T13:58:11.583728 #18395]  INFO -- :   Rendered market/index.html.erb within layouts/application (19.5ms)
+I, [2013-12-06T13:58:11.590809 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:58:11.591402 #18395]  INFO -- : Completed 200 OK in 30ms (Views: 24.2ms | ActiveRecord: 3.9ms)
+I, [2013-12-06T13:58:11.796204 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.52.227 at 2013-12-06 13:58:11 +0700
+I, [2013-12-06T13:58:11.841073 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.52.227 at 2013-12-06 13:58:11 +0700
+I, [2013-12-06T13:58:14.830720 #18395]  INFO -- : Started GET "/goods/new" for 203.159.52.227 at 2013-12-06 13:58:14 +0700
+I, [2013-12-06T13:58:14.833665 #18395]  INFO -- : Processing by GoodsController#new as HTML
+I, [2013-12-06T13:58:14.852446 #18395]  INFO -- :   Rendered goods/_form.html.erb (12.1ms)
+I, [2013-12-06T13:58:14.852723 #18395]  INFO -- :   Rendered goods/new.html.erb within layouts/application (12.6ms)
+I, [2013-12-06T13:58:14.856992 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:58:14.857594 #18395]  INFO -- : Completed 200 OK in 24ms (Views: 17.5ms | ActiveRecord: 1.7ms)
+I, [2013-12-06T13:58:14.891820 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.52.227 at 2013-12-06 13:58:14 +0700
+I, [2013-12-06T13:58:14.908926 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.52.227 at 2013-12-06 13:58:14 +0700
+I, [2013-12-06T13:58:50.566689 #18395]  INFO -- : Started POST "/goods" for 203.159.52.227 at 2013-12-06 13:58:50 +0700
+I, [2013-12-06T13:58:50.570619 #18395]  INFO -- : Processing by GoodsController#create as HTML
+I, [2013-12-06T13:58:50.570790 #18395]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"D6rkMTtAZM0YkVWcotOeGsJier1bRsvIdYUtFxJlPa8=", "good"=>{"title"=>"Big java", "price"=>"30.99", "description"=>"Nice book for java beginners :)", "category_id"=>"1"}, "commit"=>"Create Good"}
+I, [2013-12-06T13:58:50.611133 #18395]  INFO -- : Redirected to http://web8.cs.ait.ac.th/goods/2
+I, [2013-12-06T13:58:50.613102 #18395]  INFO -- : Completed 302 Found in 42ms (ActiveRecord: 27.8ms)
+I, [2013-12-06T13:58:50.640031 #18395]  INFO -- : Started GET "/goods/2" for 203.159.52.227 at 2013-12-06 13:58:50 +0700
+I, [2013-12-06T13:58:50.642555 #18395]  INFO -- : Processing by GoodsController#show as HTML
+I, [2013-12-06T13:58:50.642680 #18395]  INFO -- :   Parameters: {"id"=>"2"}
+I, [2013-12-06T13:58:50.665026 #18395]  INFO -- :   Rendered comments/_form.html.erb (4.0ms)
+I, [2013-12-06T13:58:50.665351 #18395]  INFO -- :   Rendered goods/show.html.erb within layouts/application (17.8ms)
+I, [2013-12-06T13:58:50.669586 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:58:50.670186 #18395]  INFO -- : Completed 200 OK in 27ms (Views: 20.6ms | ActiveRecord: 3.3ms)
+I, [2013-12-06T13:58:50.820106 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.52.227 at 2013-12-06 13:58:50 +0700
+I, [2013-12-06T13:58:50.886440 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.52.227 at 2013-12-06 13:58:50 +0700
+I, [2013-12-06T13:58:59.613838 #18395]  INFO -- : Started GET "/market" for 203.159.52.227 at 2013-12-06 13:58:59 +0700
+I, [2013-12-06T13:58:59.616614 #18395]  INFO -- : Processing by MarketController#index as HTML
+I, [2013-12-06T13:58:59.616766 #18395]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}}
+I, [2013-12-06T13:58:59.625800 #18395]  INFO -- :   Rendered market/_categories.html.erb (3.8ms)
+I, [2013-12-06T13:58:59.645998 #18395]  INFO -- :   Rendered market/_goods.html.erb (19.8ms)
+I, [2013-12-06T13:58:59.646658 #18395]  INFO -- :   Rendered market/index.html.erb within layouts/application (26.6ms)
+I, [2013-12-06T13:58:59.653564 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:58:59.654137 #18395]  INFO -- : Completed 200 OK in 37ms (Views: 29.9ms | ActiveRecord: 4.9ms)
+I, [2013-12-06T13:58:59.690657 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.52.227 at 2013-12-06 13:58:59 +0700
+I, [2013-12-06T13:58:59.705996 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.52.227 at 2013-12-06 13:58:59 +0700
+I, [2013-12-06T13:59:02.768589 #18395]  INFO -- : Started GET "/goods/1" for 203.159.52.227 at 2013-12-06 13:59:02 +0700
+I, [2013-12-06T13:59:02.771066 #18395]  INFO -- : Processing by GoodsController#show as HTML
+I, [2013-12-06T13:59:02.771189 #18395]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2013-12-06T13:59:02.792453 #18395]  INFO -- :   Rendered comments/_show.html.erb (3.9ms)
+I, [2013-12-06T13:59:02.797478 #18395]  INFO -- :   Rendered comments/_form.html.erb (3.6ms)
+I, [2013-12-06T13:59:02.797715 #18395]  INFO -- :   Rendered goods/show.html.erb within layouts/application (21.6ms)
+I, [2013-12-06T13:59:02.801703 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:59:02.802274 #18395]  INFO -- : Completed 200 OK in 31ms (Views: 24.1ms | ActiveRecord: 3.3ms)
+I, [2013-12-06T13:59:02.845201 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.52.227 at 2013-12-06 13:59:02 +0700
+I, [2013-12-06T13:59:02.880976 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.52.227 at 2013-12-06 13:59:02 +0700
+I, [2013-12-06T13:59:19.547416 #18395]  INFO -- : Started GET "/market" for 203.159.52.227 at 2013-12-06 13:59:19 +0700
+I, [2013-12-06T13:59:19.549797 #18395]  INFO -- : Processing by MarketController#index as HTML
+I, [2013-12-06T13:59:19.549927 #18395]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}}
+I, [2013-12-06T13:59:19.559329 #18395]  INFO -- :   Rendered market/_categories.html.erb (3.8ms)
+I, [2013-12-06T13:59:19.579618 #18395]  INFO -- :   Rendered market/_goods.html.erb (19.9ms)
+I, [2013-12-06T13:59:19.579994 #18395]  INFO -- :   Rendered market/index.html.erb within layouts/application (27.0ms)
+I, [2013-12-06T13:59:19.586898 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:59:19.587480 #18395]  INFO -- : Completed 200 OK in 37ms (Views: 30.1ms | ActiveRecord: 5.0ms)
+I, [2013-12-06T13:59:19.638371 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.52.227 at 2013-12-06 13:59:19 +0700
+I, [2013-12-06T13:59:19.665726 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.52.227 at 2013-12-06 13:59:19 +0700
+I, [2013-12-06T13:59:21.564686 #18395]  INFO -- : Started GET "/goods/1" for 203.159.52.227 at 2013-12-06 13:59:21 +0700
+I, [2013-12-06T13:59:21.567131 #18395]  INFO -- : Processing by GoodsController#show as HTML
+I, [2013-12-06T13:59:21.567255 #18395]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2013-12-06T13:59:21.589499 #18395]  INFO -- :   Rendered comments/_show.html.erb (4.1ms)
+I, [2013-12-06T13:59:21.594575 #18395]  INFO -- :   Rendered comments/_form.html.erb (3.8ms)
+I, [2013-12-06T13:59:21.594817 #18395]  INFO -- :   Rendered goods/show.html.erb within layouts/application (22.8ms)
+I, [2013-12-06T13:59:21.599293 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T13:59:21.599944 #18395]  INFO -- : Completed 200 OK in 32ms (Views: 26.0ms | ActiveRecord: 3.1ms)
+I, [2013-12-06T13:59:21.639549 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.52.227 at 2013-12-06 13:59:21 +0700
+I, [2013-12-06T13:59:21.654566 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.52.227 at 2013-12-06 13:59:21 +0700
+I, [2013-12-06T13:59:36.680898 #18395]  INFO -- : Started POST "/goods/1/comments" for 203.159.52.227 at 2013-12-06 13:59:36 +0700
+I, [2013-12-06T13:59:36.686745 #18395]  INFO -- : Processing by CommentsController#create as JS
+I, [2013-12-06T13:59:36.686909 #18395]  INFO -- :   Parameters: {"utf8"=>"✓", "comment"=>{"content"=>"Wow the gold version "}, "commit"=>"Create Comment", "good_id"=>"1"}
+I, [2013-12-06T13:59:36.765705 #18395]  INFO -- :   Rendered comments/_show.html.erb (7.4ms)
+I, [2013-12-06T13:59:36.766126 #18395]  INFO -- :   Rendered comments/create_success.js.erb (10.5ms)
+I, [2013-12-06T13:59:36.766664 #18395]  INFO -- : Completed 200 OK in 80ms (Views: 17.5ms | ActiveRecord: 46.7ms)
+I, [2013-12-06T14:14:34.510034 #18395]  INFO -- : Started GET "/market" for 203.159.52.227 at 2013-12-06 14:14:34 +0700
+I, [2013-12-06T14:14:34.517689 #18395]  INFO -- : Processing by MarketController#index as HTML
+I, [2013-12-06T14:14:34.517849 #18395]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}}
+I, [2013-12-06T14:14:34.533435 #18395]  INFO -- :   Rendered market/_categories.html.erb (6.2ms)
+I, [2013-12-06T14:14:34.557126 #18395]  INFO -- :   Rendered market/_goods.html.erb (23.2ms)
+I, [2013-12-06T14:14:34.557507 #18395]  INFO -- :   Rendered market/index.html.erb within layouts/application (33.8ms)
+I, [2013-12-06T14:14:34.565999 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T14:14:34.566737 #18395]  INFO -- : Completed 200 OK in 49ms (Views: 38.0ms | ActiveRecord: 6.2ms)
+I, [2013-12-06T14:14:34.622758 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.52.227 at 2013-12-06 14:14:34 +0700
+I, [2013-12-06T14:14:34.639840 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.52.227 at 2013-12-06 14:14:34 +0700
+I, [2013-12-06T14:14:40.052123 #18395]  INFO -- : Started GET "/goods/1" for 203.159.52.227 at 2013-12-06 14:14:40 +0700
+I, [2013-12-06T14:14:40.054809 #18395]  INFO -- : Processing by GoodsController#show as HTML
+I, [2013-12-06T14:14:40.054946 #18395]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2013-12-06T14:14:40.078433 #18395]  INFO -- :   Rendered comments/_show.html.erb (4.7ms)
+I, [2013-12-06T14:14:40.083988 #18395]  INFO -- :   Rendered comments/_show.html.erb (5.1ms)
+I, [2013-12-06T14:14:40.090020 #18395]  INFO -- :   Rendered comments/_form.html.erb (4.5ms)
+I, [2013-12-06T14:14:40.090303 #18395]  INFO -- :   Rendered goods/show.html.erb within layouts/application (30.3ms)
+I, [2013-12-06T14:14:40.095004 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T14:14:40.095752 #18395]  INFO -- : Completed 200 OK in 40ms (Views: 33.3ms | ActiveRecord: 3.8ms)
+I, [2013-12-06T14:14:40.132207 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.52.227 at 2013-12-06 14:14:40 +0700
+I, [2013-12-06T14:14:40.145917 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.52.227 at 2013-12-06 14:14:40 +0700
+I, [2013-12-06T14:14:52.911922 #18395]  INFO -- : Started GET "/market/search?utf8=%E2%9C%93&keyword=M7&commit=Search" for 203.159.52.227 at 2013-12-06 14:14:52 +0700
+I, [2013-12-06T14:14:52.915301 #18395]  INFO -- : Processing by MarketController#search as HTML
+I, [2013-12-06T14:14:52.915468 #18395]  INFO -- :   Parameters: {"utf8"=>"✓", "keyword"=>"M7", "commit"=>"Search", "constraint"=>{"page"=>/\d+/}}
+I, [2013-12-06T14:14:53.202850 #18395]  INFO -- :   Rendered market/_goods.html.erb (265.0ms)
+I, [2013-12-06T14:14:53.203893 #18395]  INFO -- :   Rendered market/search.html.erb within layouts/application (269.9ms)
+I, [2013-12-06T14:14:53.211457 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T14:14:53.212180 #18395]  INFO -- : Completed 200 OK in 296ms (Views: 69.8ms | ActiveRecord: 223.7ms)
+I, [2013-12-06T14:14:53.342066 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.52.227 at 2013-12-06 14:14:53 +0700
+I, [2013-12-06T14:14:53.354509 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.52.227 at 2013-12-06 14:14:53 +0700
+I, [2013-12-06T14:14:57.235084 #18395]  INFO -- : Started GET "/goods/1" for 203.159.52.227 at 2013-12-06 14:14:57 +0700
+I, [2013-12-06T14:14:57.237674 #18395]  INFO -- : Processing by GoodsController#show as HTML
+I, [2013-12-06T14:14:57.237811 #18395]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2013-12-06T14:14:57.260393 #18395]  INFO -- :   Rendered comments/_show.html.erb (4.2ms)
+I, [2013-12-06T14:14:57.265851 #18395]  INFO -- :   Rendered comments/_show.html.erb (4.9ms)
+I, [2013-12-06T14:14:57.271467 #18395]  INFO -- :   Rendered comments/_form.html.erb (4.3ms)
+I, [2013-12-06T14:14:57.271961 #18395]  INFO -- :   Rendered goods/show.html.erb within layouts/application (28.7ms)
+I, [2013-12-06T14:14:57.276327 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T14:14:57.276953 #18395]  INFO -- : Completed 200 OK in 39ms (Views: 31.4ms | ActiveRecord: 3.8ms)
+I, [2013-12-06T14:14:57.314389 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.52.227 at 2013-12-06 14:14:57 +0700
+I, [2013-12-06T14:14:57.327486 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.52.227 at 2013-12-06 14:14:57 +0700
+I, [2013-12-06T14:15:10.020738 #18395]  INFO -- : Started GET "/goods/1" for 203.159.52.227 at 2013-12-06 14:15:10 +0700
+I, [2013-12-06T14:15:10.023230 #18395]  INFO -- : Processing by GoodsController#show as HTML
+I, [2013-12-06T14:15:10.023367 #18395]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2013-12-06T14:15:10.045542 #18395]  INFO -- :   Rendered comments/_show.html.erb (4.1ms)
+I, [2013-12-06T14:15:10.050783 #18395]  INFO -- :   Rendered comments/_show.html.erb (4.7ms)
+I, [2013-12-06T14:15:10.056109 #18395]  INFO -- :   Rendered comments/_form.html.erb (3.9ms)
+I, [2013-12-06T14:15:10.056368 #18395]  INFO -- :   Rendered goods/show.html.erb within layouts/application (27.8ms)
+I, [2013-12-06T14:15:10.060508 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T14:15:10.061101 #18395]  INFO -- : Completed 200 OK in 38ms (Views: 29.8ms | ActiveRecord: 4.0ms)
+I, [2013-12-06T14:15:10.106562 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.52.227 at 2013-12-06 14:15:10 +0700
+I, [2013-12-06T14:15:10.126717 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.52.227 at 2013-12-06 14:15:10 +0700
+I, [2013-12-06T14:16:26.467550 #18395]  INFO -- : Started GET "/" for 115.67.66.217 at 2013-12-06 14:16:26 +0700
+I, [2013-12-06T14:16:26.470747 #18395]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2013-12-06T14:16:26.473770 #18395]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (0.9ms)
+I, [2013-12-06T14:16:26.479696 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T14:16:26.480191 #18395]  INFO -- : Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+I, [2013-12-06T14:16:28.008700 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 115.67.66.217 at 2013-12-06 14:16:28 +0700
+I, [2013-12-06T14:16:28.030716 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 115.67.66.217 at 2013-12-06 14:16:28 +0700
+I, [2013-12-06T14:16:31.835383 #18395]  INFO -- : Started GET "/market" for 115.67.66.217 at 2013-12-06 14:16:31 +0700
+I, [2013-12-06T14:16:31.837620 #18395]  INFO -- : Processing by MarketController#index as HTML
+I, [2013-12-06T14:16:31.837757 #18395]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}}
+I, [2013-12-06T14:16:31.847623 #18395]  INFO -- :   Rendered market/_categories.html.erb (4.1ms)
+I, [2013-12-06T14:16:31.869492 #18395]  INFO -- :   Rendered market/_goods.html.erb (21.4ms)
+I, [2013-12-06T14:16:31.869860 #18395]  INFO -- :   Rendered market/index.html.erb within layouts/application (28.6ms)
+I, [2013-12-06T14:16:31.874848 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T14:16:31.875449 #18395]  INFO -- : Completed 200 OK in 37ms (Views: 30.3ms | ActiveRecord: 4.5ms)
+I, [2013-12-06T14:16:39.586014 #18395]  INFO -- : Started GET "/market" for 115.67.66.217 at 2013-12-06 14:16:39 +0700
+I, [2013-12-06T14:16:39.590050 #18395]  INFO -- : Processing by MarketController#index as HTML
+I, [2013-12-06T14:16:39.590190 #18395]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}}
+I, [2013-12-06T14:16:39.600939 #18395]  INFO -- :   Rendered market/_categories.html.erb (4.4ms)
+I, [2013-12-06T14:16:39.623111 #18395]  INFO -- :   Rendered market/_goods.html.erb (21.7ms)
+I, [2013-12-06T14:16:39.623515 #18395]  INFO -- :   Rendered market/index.html.erb within layouts/application (29.2ms)
+I, [2013-12-06T14:16:39.628826 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T14:16:39.629443 #18395]  INFO -- : Completed 200 OK in 39ms (Views: 31.6ms | ActiveRecord: 4.3ms)
+I, [2013-12-06T14:16:39.803976 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 115.67.66.217 at 2013-12-06 14:16:39 +0700
+I, [2013-12-06T14:16:39.826435 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 115.67.66.217 at 2013-12-06 14:16:39 +0700
+I, [2013-12-06T14:16:45.394959 #18395]  INFO -- : Started GET "/goods/2" for 115.67.66.217 at 2013-12-06 14:16:45 +0700
+I, [2013-12-06T14:16:45.397575 #18395]  INFO -- : Processing by GoodsController#show as HTML
+I, [2013-12-06T14:16:45.397699 #18395]  INFO -- :   Parameters: {"id"=>"2"}
+I, [2013-12-06T14:16:45.417588 #18395]  INFO -- :   Rendered goods/show.html.erb within layouts/application (15.1ms)
+I, [2013-12-06T14:16:45.422321 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T14:16:45.422871 #18395]  INFO -- : Completed 200 OK in 25ms (Views: 19.4ms | ActiveRecord: 2.3ms)
+I, [2013-12-06T14:16:45.584551 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 115.67.66.217 at 2013-12-06 14:16:45 +0700
+I, [2013-12-06T14:16:45.664019 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 115.67.66.217 at 2013-12-06 14:16:45 +0700
+I, [2013-12-06T14:16:51.484989 #18395]  INFO -- : Started GET "/market" for 115.67.66.217 at 2013-12-06 14:16:51 +0700
+I, [2013-12-06T14:16:51.487400 #18395]  INFO -- : Processing by MarketController#index as HTML
+I, [2013-12-06T14:16:51.487532 #18395]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}}
+I, [2013-12-06T14:16:51.496767 #18395]  INFO -- :   Rendered market/_categories.html.erb (4.2ms)
+I, [2013-12-06T14:16:51.517124 #18395]  INFO -- :   Rendered market/_goods.html.erb (19.9ms)
+I, [2013-12-06T14:16:51.517475 #18395]  INFO -- :   Rendered market/index.html.erb within layouts/application (26.9ms)
+I, [2013-12-06T14:16:51.522347 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T14:16:51.522913 #18395]  INFO -- : Completed 200 OK in 35ms (Views: 28.9ms | ActiveRecord: 4.0ms)
+I, [2013-12-06T14:16:51.725187 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 115.67.66.217 at 2013-12-06 14:16:51 +0700
+I, [2013-12-06T14:16:51.794396 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 115.67.66.217 at 2013-12-06 14:16:51 +0700
+I, [2013-12-06T14:16:54.074118 #18395]  INFO -- : Started GET "/goods/1" for 115.67.66.217 at 2013-12-06 14:16:54 +0700
+I, [2013-12-06T14:16:54.076709 #18395]  INFO -- : Processing by GoodsController#show as HTML
+I, [2013-12-06T14:16:54.076835 #18395]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2013-12-06T14:16:54.101806 #18395]  INFO -- :   Rendered comments/_show.html.erb (5.6ms)
+I, [2013-12-06T14:16:54.108245 #18395]  INFO -- :   Rendered comments/_show.html.erb (6.0ms)
+I, [2013-12-06T14:16:54.109826 #18395]  INFO -- :   Rendered goods/show.html.erb within layouts/application (28.3ms)
+I, [2013-12-06T14:16:54.114157 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T14:16:54.114707 #18395]  INFO -- : Completed 200 OK in 38ms (Views: 31.6ms | ActiveRecord: 2.9ms)
+I, [2013-12-06T14:16:54.315090 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 115.67.66.217 at 2013-12-06 14:16:54 +0700
+I, [2013-12-06T14:16:54.324662 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 115.67.66.217 at 2013-12-06 14:16:54 +0700
+I, [2013-12-06T14:17:10.109361 #18395]  INFO -- : Started GET "/goods/new" for 115.67.66.217 at 2013-12-06 14:17:10 +0700
+I, [2013-12-06T14:17:10.111837 #18395]  INFO -- : Processing by GoodsController#new as HTML
+I, [2013-12-06T14:17:10.115153 #18395]  INFO -- : Redirected to http://web8.cs.ait.ac.th/users/sign_in
+I, [2013-12-06T14:17:10.115398 #18395]  INFO -- : Filter chain halted as :require_logged_in rendered or redirected
+I, [2013-12-06T14:17:10.115633 #18395]  INFO -- : Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+I, [2013-12-06T14:17:10.312384 #18395]  INFO -- : Started GET "/users/sign_in" for 115.67.66.217 at 2013-12-06 14:17:10 +0700
+I, [2013-12-06T14:17:10.316765 #18395]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2013-12-06T14:17:10.355579 #18395]  INFO -- :   Rendered devise/shared/_links.erb (1.7ms)
+I, [2013-12-06T14:17:10.355946 #18395]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (24.7ms)
+I, [2013-12-06T14:17:10.360307 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T14:17:10.360859 #18395]  INFO -- : Completed 200 OK in 44ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+I, [2013-12-06T14:17:10.561824 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 115.67.66.217 at 2013-12-06 14:17:10 +0700
+I, [2013-12-06T14:17:10.577951 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 115.67.66.217 at 2013-12-06 14:17:10 +0700
+I, [2013-12-06T14:17:43.691461 #18395]  INFO -- : Started GET "/" for 115.67.66.217 at 2013-12-06 14:17:43 +0700
+I, [2013-12-06T14:17:43.694930 #18395]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2013-12-06T14:17:43.698284 #18395]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (1.3ms)
+I, [2013-12-06T14:17:43.703269 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T14:17:43.703835 #18395]  INFO -- : Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+I, [2013-12-06T14:17:43.931104 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 115.67.66.217 at 2013-12-06 14:17:43 +0700
+I, [2013-12-06T14:17:44.010362 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 115.67.66.217 at 2013-12-06 14:17:44 +0700
+I, [2013-12-06T14:17:46.920444 #18395]  INFO -- : Started GET "/market" for 115.67.66.217 at 2013-12-06 14:17:46 +0700
+I, [2013-12-06T14:17:46.922682 #18395]  INFO -- : Processing by MarketController#index as HTML
+I, [2013-12-06T14:17:46.922832 #18395]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}}
+I, [2013-12-06T14:17:46.932613 #18395]  INFO -- :   Rendered market/_categories.html.erb (4.2ms)
+I, [2013-12-06T14:17:46.954199 #18395]  INFO -- :   Rendered market/_goods.html.erb (20.9ms)
+I, [2013-12-06T14:17:46.954540 #18395]  INFO -- :   Rendered market/index.html.erb within layouts/application (28.4ms)
+I, [2013-12-06T14:17:46.959643 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T14:17:46.960244 #18395]  INFO -- : Completed 200 OK in 37ms (Views: 30.3ms | ActiveRecord: 4.3ms)
+I, [2013-12-06T14:30:09.725119 #18395]  INFO -- : Started GET "/users/sign_up" for 115.67.134.37 at 2013-12-06 14:30:09 +0700
+I, [2013-12-06T14:30:09.731607 #18395]  INFO -- : Processing by Devise::RegistrationsController#new as HTML
+I, [2013-12-06T14:30:09.749229 #18395]  INFO -- :   Rendered devise/shared/_links.erb (0.6ms)
+I, [2013-12-06T14:30:09.749511 #18395]  INFO -- :   Rendered devise/registrations/new.html.erb within layouts/application (11.4ms)
+I, [2013-12-06T14:30:09.754569 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T14:30:09.755074 #18395]  INFO -- : Completed 200 OK in 23ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+I, [2013-12-06T14:30:10.475686 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 115.67.134.37 at 2013-12-06 14:30:10 +0700
+I, [2013-12-06T14:30:10.543107 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 115.67.134.37 at 2013-12-06 14:30:10 +0700
+I, [2013-12-06T14:30:12.900097 #18395]  INFO -- : Started GET "/users/sign_up" for 115.67.134.37 at 2013-12-06 14:30:12 +0700
+I, [2013-12-06T14:30:12.902110 #18395]  INFO -- : Processing by Devise::RegistrationsController#new as HTML
+I, [2013-12-06T14:30:12.913136 #18395]  INFO -- :   Rendered devise/shared/_links.erb (0.4ms)
+I, [2013-12-06T14:30:12.913378 #18395]  INFO -- :   Rendered devise/registrations/new.html.erb within layouts/application (8.3ms)
+I, [2013-12-06T14:30:12.917393 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T14:30:12.917781 #18395]  INFO -- : Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+I, [2013-12-06T14:30:13.393265 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 115.67.134.37 at 2013-12-06 14:30:13 +0700
+I, [2013-12-06T14:30:13.400904 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 115.67.134.37 at 2013-12-06 14:30:13 +0700
+I, [2013-12-06T14:32:17.543424 #18395]  INFO -- : Started GET "/market" for 115.67.134.37 at 2013-12-06 14:32:17 +0700
+I, [2013-12-06T14:32:17.546947 #18395]  INFO -- : Processing by MarketController#index as HTML
+I, [2013-12-06T14:32:17.547124 #18395]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}}
+I, [2013-12-06T14:32:17.560224 #18395]  INFO -- :   Rendered market/_categories.html.erb (5.4ms)
+I, [2013-12-06T14:32:17.584058 #18395]  INFO -- :   Rendered market/_goods.html.erb (23.4ms)
+I, [2013-12-06T14:32:17.584473 #18395]  INFO -- :   Rendered market/index.html.erb within layouts/application (32.5ms)
+I, [2013-12-06T14:32:17.590199 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T14:32:17.590864 #18395]  INFO -- : Completed 200 OK in 44ms (Views: 34.5ms | ActiveRecord: 5.3ms)
+I, [2013-12-06T14:32:17.811094 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 115.67.134.37 at 2013-12-06 14:32:17 +0700
+I, [2013-12-06T14:32:17.890288 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 115.67.134.37 at 2013-12-06 14:32:17 +0700
+I, [2013-12-06T14:37:10.229042 #18395]  INFO -- : Started GET "/markets" for 203.159.52.227 at 2013-12-06 14:37:10 +0700
+F, [2013-12-06T14:37:10.232999 #18395] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/markets"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  passenger (4.0.18) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.18) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.18) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+I, [2013-12-06T14:37:17.761889 #18395]  INFO -- : Started GET "/market" for 203.159.52.227 at 2013-12-06 14:37:17 +0700
+I, [2013-12-06T14:37:17.766256 #18395]  INFO -- : Processing by MarketController#index as HTML
+I, [2013-12-06T14:37:17.766413 #18395]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}}
+I, [2013-12-06T14:37:17.780158 #18395]  INFO -- :   Rendered market/_categories.html.erb (5.7ms)
+I, [2013-12-06T14:37:17.803458 #18395]  INFO -- :   Rendered market/_goods.html.erb (22.8ms)
+I, [2013-12-06T14:37:17.803909 #18395]  INFO -- :   Rendered market/index.html.erb within layouts/application (32.3ms)
+I, [2013-12-06T14:37:17.812265 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T14:37:17.812969 #18395]  INFO -- : Completed 200 OK in 46ms (Views: 36.4ms | ActiveRecord: 6.0ms)
+I, [2013-12-06T14:37:17.852878 #18395]  INFO -- : Started GET "/assets/application-74a49cc3260faa0b4ebbdbd78b923b81.css" for 203.159.52.227 at 2013-12-06 14:37:17 +0700
+I, [2013-12-06T14:37:17.867308 #18395]  INFO -- : Started GET "/assets/application-05f61d86b6e382241c8fae1e6bf91a4b.js" for 203.159.52.227 at 2013-12-06 14:37:17 +0700
+I, [2013-12-06T16:08:08.571294 #18395]  INFO -- : Started GET "/market" for 27.55.166.155 at 2013-12-06 16:08:08 +0700
+I, [2013-12-06T16:08:08.577746 #18395]  INFO -- : Processing by MarketController#index as HTML
+I, [2013-12-06T16:08:08.577906 #18395]  INFO -- :   Parameters: {"constraint"=>{"page"=>/\d+/}}
+I, [2013-12-06T16:08:08.592258 #18395]  INFO -- :   Rendered market/_categories.html.erb (5.9ms)
+I, [2013-12-06T16:08:08.615674 #18395]  INFO -- :   Rendered market/_goods.html.erb (23.0ms)
+I, [2013-12-06T16:08:08.616096 #18395]  INFO -- :   Rendered market/index.html.erb within layouts/application (32.9ms)
+I, [2013-12-06T16:08:08.622566 #18395]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2013-12-06T16:08:08.623229 #18395]  INFO -- : Completed 200 OK in 45ms (Views: 36.1ms | ActiveRecord: 5.1ms)

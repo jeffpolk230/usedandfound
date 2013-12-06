@@ -10,6 +10,8 @@ class CategoriesController < ApplicationController
       if @category.save
         flash[:message] = "#{@category.category_title} is created"
         redirect_to market_path
+	  end
+	end
   end
   
   def edit
