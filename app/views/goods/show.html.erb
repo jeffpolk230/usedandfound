@@ -32,7 +32,7 @@
 		<span class="value"><%= @good.category.category_title %></span>
 	</div>
 
-	<p><%= @good.description %></p>
+	<%=raw sanitize(simple_format(@good.description), :tags => %w(br p)) %>
 	<div class="panel">
 		<%= link_to 'Edit' ,  edit_good_path( @good.id ) if @good.owned_by? current_user %> 
 		<%= link_to 'Report Inappropriate' ,  warn_good_path( @good.id ) if user_signed_in? and !@good.owned_by?( current_user ) %>  

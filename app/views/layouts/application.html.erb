@@ -3,7 +3,7 @@
 <head>
   <title>Used & Found</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -14,6 +14,7 @@
 					<span id="used">Used</span>
 					<span id="and"> & </span>
 					<span id="found"> Found</span>
+					<spane id="beta"> beta testing</span>
 				<% end %>
 			</div>
 			

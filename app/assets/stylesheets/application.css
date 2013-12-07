@@ -60,6 +60,11 @@ section#header #logo #found {
 	font-weight: bold;
 }
 
+section#header #logo #beta {
+    font-size: 0.1em;
+    font-family: "Courier New";
+}
+
 #user-info , #guest-bar {
 	text-align: right;
 	width: 49%; 
