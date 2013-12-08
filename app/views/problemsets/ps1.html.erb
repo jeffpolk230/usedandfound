@@ -24,3 +24,5 @@ Asking rails to render uniform footer fatched from layouts/_footer.html.erb.
 <% @listFromYahoo.each do |item| %>
   <li><%= link_to item.text, item['href'], target: '_blank' %></li>
 <%end%>
+
+<%= render :partial => 'psfooter' %>

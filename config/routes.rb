@@ -1,9 +1,9 @@
 UF::Application.routes.draw do
   
   devise_for :users
-  #get "welcome/index"
+  get "assignments" => "welcome#assignments", :as => "assignments"
   # get "market" => "market#index", :as => 'market'
-#   get "market/search" => "market#search" , :as => 'market_search'
+  # get "market/search" => "market#search" , :as => 'market_search'
   resources :goods, :except => [ :destroy , :index ] do
     resources :comments, :except => [ :index , :show ]
   end
@@ -22,15 +22,15 @@ UF::Application.routes.draw do
   end
 
   
-  scope :path => '/problemsets', :controller => 'problemsets' do
-    get '/ps1' => :ps1, :as => 'problemset_one'
-    get '/ps3' => :ps3, :as => 'problemset_three'
-    get '/ps4' => :ps4, :as => 'problemset_four'
-    get '/ps5' => :ps5, :as => 'problemset_five'
-    get '/ps6' => :ps6, :as => 'problemset_six'
+  scope :path => '/', :controller => 'problemsets' do
+    get '/ps1' => :ps1, :as => '/ps1'
+    get '/ps3' => :ps3, :as => '/ps3'
+    get '/ps4' => :ps4, :as => '/ps4'
+    get '/ps5' => :ps5, :as => '/ps5'
+    get '/ps6' => :ps6, :as => '/ps6'
   end
 
-  get "problemset2/index"
+  get "problemset2/index", :as => '/ps2'
   get "problemset2/create"
   get "problemset2/search"
   post "problemset2/create"
