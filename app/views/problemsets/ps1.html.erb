@@ -1,0 +1,26 @@
+<h1> Problemset One </h1>
+<hr >
+
+<h2>Problem Set 1: Question 1</h2>
+<p>
+	Figure out how to add a XHTML syntax validation link to the site view layout at the bottom of your pages, and do it.
+</p>
+
+
+For this question, we added 'render "layouts/footer"' to our application.html.erb under layouts folder. 
+<br />
+Asking rails to render uniform footer fatched from layouts/_footer.html.erb.  
+
+
+<h2>Problem Set 1: Question 2</h2>
+<p>In your controller for this problem set, add code that generates a divide-by-zero exception. Figure out how to get your server (in production mode) to output a stack trace to the browser when such an exception occurs. (Later, however, you’ll want to turn this off as it is not considered a best security practice.) Find the error log for your production server. Add code to your controller that logs a message “About to divide by 0” to that error log just before you divide by 0. In your index to your solution to this problem set, explain how this is done (in English).
+</p>
+
+<%= @error %>
+
+<h2>Problem Set 1: Question3</h2>
+<p>Create a Web page that, when accessed, fetches the 10 links currently in the “Trending Now” box at yahoo.com. Your code should figure out how to access the link data and slurp them into your own page. Note that you should do all the processing on the server and output a static HTML page (do not do any fancy Javascript here).</p>
+
+<% @listFromYahoo.each do |item| %>
+  <li><%= link_to item.text, item['href'], target: '_blank' %></li>
+<%end%>

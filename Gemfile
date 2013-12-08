@@ -41,6 +41,9 @@ gem 'devise'
 gem 'paperclip', '~>3.0'
 gem 'will_paginate', '~> 3.0'
 
+# mechanize for web scrapping 
+gem 'mechanize'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 

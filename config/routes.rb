@@ -22,6 +22,21 @@ UF::Application.routes.draw do
   end
 
   
+  scope :path => '/problemsets', :controller => 'problemsets' do
+    get '/ps1' => :ps1, :as => 'problemset_one'
+    get '/ps3' => :ps3, :as => 'problemset_three'
+    get '/ps4' => :ps4, :as => 'problemset_four'
+    get '/ps5' => :ps5, :as => 'problemset_five'
+    get '/ps6' => :ps6, :as => 'problemset_six'
+  end
+
+  get "problemset2/index"
+  get "problemset2/create"
+  get "problemset2/search"
+  post "problemset2/create"
+  post "problemset2/upload"
+  get "problemset2/disable"
+  get "problemset2/cleanup"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

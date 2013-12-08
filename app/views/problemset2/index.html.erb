@@ -1,0 +1,82 @@
+<h1> Problemset Two </h1>
+<div style="text-align:left;">
+<table class="tableStyle1" width="100%">
+  <tr>
+    <th>Quote</th>
+    <th> Category </th>
+    <th>Author</th>
+    <th> Created at </th>
+	<th></th>
+  </tr>
+  <% @quotations.each do |quotation| %>
+      <tr>
+        <td><%= quotation.quote %></td>
+        <td><%= quotation.quote_category %></td>
+        <td><%= quotation.author_name %></td>
+        <td><%= quotation.created_at.strftime('%m/%d/%Y %I:%M:%S %p') %></td>
+		<td><%= link_to "Disable", controller: 'problemset2', action: 'disable', id: quotation.id %></td>
+      </tr>
+  <% end %>
+</table>
+</div>
+<br />
+<div style="display:block;">
+	<hr>
+<h3>Add new Quotation</h3>
+<table cellspacing="5" cellpadding="5" align="left">
+  <%= form_for(:quotation, :url => {:controller => 'problemset2', :action => 'create'}) do |f| %>
+
+      <tr>
+        <td width="120px"><%= f.label :author_name %></td>
+        <td><%= f.text_field :author_name, :size => 30, :maxlength => 40 %>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <%= f.label :quote_category %></td>
+        <td>
+          <% Quotation.connection.select_values("SELECT DISTINCT Quote_category FROM Quotations").each do |category| %>
+              <%= f.radio_button(:quote_category, category.to_s) %>
+              <%= f.label(:quote_category, category.to_s) %>
+          <% end %>
+          <%= f.radio_button(:quote_category, "New Category", {:checked => true }) %>
+          <%= f.label(:quote_category, "New Category") %>
+          <%= f.text_field :quote_category, :size => 20, :maxlength => 40 %></td>
+      </tr>
+
+      <tr>
+        <td><%= f.label :quote %></td>
+        <td><%= f.text_area :quote, :rows => 2, :cols => 40, :maxlength => 500, :size => 100 %></td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td><%= f.submit "Create new quotation" %></td>
+      </tr>
+
+  <% end %>
+  
+</table>
+</div>
+
+<div  style="display:block;text-align:right;clear:both;">
+<%= link_to "Clean UP your cookies", controller: "problemset2", action: "cleanup" %>
+
+<%= form_tag("/problemset2/upload", controller: "problemset2", action: "upload", method: "post", multipart: true) do %>
+    <p>
+      UpLoad File:
+      <%= file_field_tag(:upload_file) %>
+      <%= submit_tag("Upload", :name => nil) %>
+    </p>
+<% end %>
+
+
+<%= form_tag("/problemset2/index", controller: "problemset2", action: "search", method: "get") do %>
+    <p>
+      Keyword:
+      <%= text_field_tag(:search) %>
+      <%= submit_tag("Search", :name => nil) %>
+    </p>
+<% end %>
+</div>
